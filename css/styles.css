@@ -456,6 +456,7 @@ a {
 .section {
   padding: 80px 0;
   position: relative;
+  scroll-margin-top: 85px;
 }
 
 .section-header {
@@ -1037,4 +1038,154 @@ footer {
   .hero-buttons .btn {
     width: 100%;
   }
+}
+
+
+/* Competencias Clave Grid */
+.competencias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.competencia-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.competencia-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-focus);
+}
+
+.competencia-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.competencia-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(6, 182, 212, 0.12);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: var(--accent-cyan);
+  font-size: 1.1rem;
+}
+
+.competencia-title {
+  font-size: 1.05rem;
+}
+
+.competencia-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.775rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.tech-tag:hover {
+  color: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+}
+
+/* Timeline Trayectoria */
+.timeline-section {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-cyan), var(--accent-indigo), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.25rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.timeline-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.timeline-content:hover {
+  border-color: var(--border-focus);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.timeline-periodo {
+  font-size: 0.8rem;
+  font-family: monospace;
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.timeline-empresa {
+  font-size: 1.15rem;
+}
+
+.timeline-rol {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-emerald);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-resumen {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
