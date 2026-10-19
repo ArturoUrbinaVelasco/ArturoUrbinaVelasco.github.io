@@ -1,7 +1,8 @@
 /**
  * data.js - Base de datos de Arturo Urbina Velasco & AjuscoFix
  * Portafolio profesional en múltiples lenguajes, tecnologías e Inteligencia Artificial.
- * Desarrollos anonimizados por confidencialidad, cotizaciones a medida y esquemas con porcentajes.
+ * Sistemas operativos, paqueterías comerciales y Open Source, automatización de procesos,
+ * desarrollo de sitios web a medida, mobile nativo e infraestructura integral.
  */
 
 const SITE_DATA = {
@@ -10,8 +11,8 @@ const SITE_DATA = {
     tituloProfesional: "Desarrollador de Aplicaciones Senior | Múltiples Lenguajes, Tecnologías & IA Aplicada",
     marca: "Arturo Urbina Velasco",
     submarca: "AjuscoFix · Soluciones Tecnológicas & Desarrollo",
-    slogan: "Software Empresarial en Múltiples Lenguajes · IA On-Premise · Mobile & Infraestructura",
-    perfil: "Desarrollador de aplicaciones con más de 13 años construyendo software empresarial de extremo a extremo —modelo de datos, API, interfaz, despliegue y capacitación— en salud, manufactura y retail. Especialista en múltiples lenguajes y tecnologías: desarrollo web full-stack, aplicaciones móviles nativas Android, arquitecturas de Inteligencia Artificial On-Premise (sistemas multiagente, RAG documental con pgvector y LLMs locales en infraestructura propia sin fuga de datos), interoperabilidad clínica (DICOM/PACS, HL7, Mirth Connect), infraestructura en Docker/Linux y soporte integral de hardware y redes.",
+    slogan: "Software Empresarial · Sitios Web a Medida · Automatización de Procesos · IA & Sistemas Operativos",
+    perfil: "Desarrollador de aplicaciones con más de 13 años construyendo software empresarial de extremo a extremo —modelo de datos, API, interfaz, despliegue y capacitación— en salud, manufactura y retail. Especialista en múltiples lenguajes y tecnologías: desarrollo de sitios web en base a necesidad, mejora y automatización de procesos en múltiples áreas de negocio (eliminación de flujos manuales en Excel/Word con scripts y tableros), instalación y soporte de sistemas operativos (Windows, Linux, macOS), paqueterías comerciales, software libre y Open Source, desarrollo móvil nativo en Android, arquitecturas de Inteligencia Artificial On-Premise (sistemas multiagente, RAG documental con pgvector y LLMs locales sin fuga de datos), interoperabilidad clínica (DICOM/PACS, HL7) e infraestructura integral de hardware y redes.",
     telefono: "55 5969 4250",
     telefonoRaw: "525559694250",
     email: "arturo.urbina.velasco@gmail.com",
@@ -27,109 +28,152 @@ const SITE_DATA = {
 
   metricas: [
     { numero: "13+", label: "Años de Trayectoria", sub: "Software empresarial de extremo a extremo" },
+    { numero: "Multi-Área", label: "Automatización & Procesos", sub: "Eliminación de tareas manuales repetitivas" },
     { numero: "On-Prem", label: "IA Privada & Segura", sub: "Modelos locales sin fuga de datos" },
-    { numero: "690+", label: "Tests Automatizados", sub: "Clean Architecture, SOLID y CI/CD" },
-    { numero: "Multi-Stack", label: "Múltiples Tecnologías", sub: "Desde el hardware hasta modelos de IA" }
+    { numero: "Open/Com", label: "Software Libre & Comercial", sub: "Sistemas operativos, suites y licencias" }
   ],
 
   competenciasClave: [
     {
+      categoria: "Sistemas Operativos & Entornos Virtuales",
+      icono: "fab fa-windows",
+      items: [
+        "Windows (11, 10, 8, 7, XP)",
+        "Windows Server (2003 – 2022)",
+        "Linux (Ubuntu Server, Fedora, Debian)",
+        "macOS",
+        "VirtualBox & VMware",
+        "Optimización de Rendimiento & Servicios",
+        "Directorio Activo & Cuentas de Usuario",
+        "Servidores FTP & Almacenamiento NAS"
+      ]
+    },
+    {
+      categoria: "Paqueterías, Software Comercial & Open Source",
+      icono: "fas fa-box-open",
+      items: [
+        "Microsoft Office 365 (Excel Avanzado, Word, Access, Outlook)",
+        "LibreOffice & OpenOffice (Software Libre)",
+        "Sistemas Administrativos (COI, NOI, SUA)",
+        "ERP Castelec SAI & SICIA (Inventarios)",
+        "Adobe Pack & Corel Draw",
+        "Antivirus & Seguridad (SonicWall, Fortinet, Nod32)",
+        "Herramientas Open Source para Negocios y PyMEs",
+        "Soporte Remoto (TeamViewer, AnyDesk)"
+      ]
+    },
+    {
+      categoria: "Mejora & Automatización de Procesos",
+      icono: "fas fa-cogs",
+      items: [
+        "Eliminación de Procesos Manuales en Excel/Word",
+        "Scripts de Automatización (Python, PowerShell, Bash, BAT)",
+        "Carga e Importación Semántica de Documentos",
+        "Tableros Web Autoadministrables",
+        "Generación Oficial de Reportes PDF y Excel",
+        "Integración entre Áreas (RRHH, Compras, Almacén, Ventas)",
+        "Tareas Programadas & Respaldos Automáticos"
+      ]
+    },
+    {
+      categoria: "Sitios Web a Medida & Plataformas Full-Stack",
+      icono: "fas fa-globe",
+      items: [
+        "Sitios Web en Base a tu Necesidad",
+        "Landing Pages de Alta Conversión",
+        "Catálogos en Línea & Portales Comerciales",
+        "React, Vite, Node.js (Express), FastAPI",
+        "Diseño Responsivo para Móviles & SEO",
+        "Integración con WhatsApp y Telegram",
+        "HUB de Aplicaciones Corporativo (SSO con JWT)"
+      ]
+    },
+    {
       categoria: "Inteligencia Artificial Aplicada",
       icono: "fas fa-brain",
       items: [
-        "LangGraph",
-        "Ollama (Inferencia Local)",
-        "LLMs On-Premise",
-        "RAG (pgvector, HNSW, RRF)",
-        "Sistemas Multiagente",
+        "LangGraph (Sistemas Multiagente)",
+        "Ollama (Inferencia Local On-Premise)",
+        "RAG Privado (pgvector, HNSW, RRF)",
         "Model Context Protocol (MCP)",
         "Human-in-the-Loop",
-        "MinerU & Extracción de Texto",
+        "MinerU & Extracción Inteligente",
         "Prompt Engineering"
       ]
     },
     {
-      categoria: "Lenguajes & Frameworks",
-      icono: "fas fa-code",
+      categoria: "Desarrollo Móvil Nativo & Hardware",
+      icono: "fas fa-mobile-alt",
       items: [
-        "Kotlin (Android Nativo, Compose)",
-        "JavaScript / Node.js (Express)",
-        "Python (FastAPI, ReportLab)",
-        "React / Vite / TailwindCSS",
-        "C# (.NET, Windows Forms, WPF)",
-        "SQL Avanzado",
-        "PowerShell & Bash",
-        "Scripts BAT & Automatización",
-        "DevExpress"
-      ]
-    },
-    {
-      categoria: "Bases de Datos & Persistencia",
-      icono: "fas fa-database",
-      items: [
-        "PostgreSQL (pgvector, UUID v7)",
-        "SQL Server",
-        "MySQL",
-        "SQLite / Room",
-        "Migraciones Flyway",
-        "Stored Procedures & Vistas",
-        "Modelado por Dominios",
-        "Respaldos Automatizados"
-      ]
-    },
-    {
-      categoria: "Infraestructura, DevOps & Ciberseguridad",
-      icono: "fas fa-server",
-      items: [
-        "Linux (Ubuntu Server, Fedora)",
-        "Docker & Docker Compose",
-        "nginx & Traefik (HTTPS / SSL)",
-        "SSO con JWT RS256 / JWKS",
-        "Vaultwarden (Gestión de Secretos)",
-        "VirtualBox & VMware",
-        "Ciberseguridad Defensiva",
-        "Análisis Forense & Reverse Engineering",
-        "GitLab & Conventional Commits"
-      ]
-    },
-    {
-      categoria: "Integración Especializada, Salud & Hardware",
-      icono: "fas fa-hospital",
-      items: [
-        "DICOM / PACS (C-ECHO, C-FIND, C-MOVE)",
-        "HL7 sobre Mirth Connect",
-        "Telemetría Puerto COM (Dispositivos Médicos)",
-        "Simuladores de Signos Vitales",
-        "Tarjetas Capturadoras de Video",
+        "Kotlin (Android Nativo, Jetpack Compose)",
+        "Clean Architecture & Room SQLite (100% Offline)",
+        "Criptografía Asimétrica ECDSA Offline",
+        "DICOM / PACS & HL7 Mirth Connect",
+        "Telemetría Puerto COM (Equipos Médicos, Lámparas)",
         "Cableado Estructurado Cat 6/6A",
-        "Wi-Fi Mesh Unificado",
-        "Soporte IT & Mantenimiento Hardware"
-      ]
-    },
-    {
-      categoria: "Sistemas Administrativos & ERP",
-      icono: "fas fa-cash-register",
-      items: [
-        "ERP Castelec SAI",
-        "SICIA (Inventarios Hospitalarios)",
-        "Integración TPV Bancarias (Banorte, Bancomer)",
-        "Punto de Venta (POS)",
-        "COI, NOI, SUA",
-        "Reportería Ejecutiva & Financiera"
+        "Wi-Fi Mesh Unificado & Soporte AjuscoFix"
       ]
     }
   ],
 
   categorias: [
     { id: "todos", nombre: "Todas las Especialidades", icono: "fas fa-layer-group" },
+    { id: "web", nombre: "Sitios Web & Automatización", icono: "fas fa-laptop-code" },
     { id: "ia", nombre: "IA Aplicada & Multiagente", icono: "fas fa-brain" },
     { id: "movil", nombre: "Apps Móviles & Multidispositivo", icono: "fas fa-mobile-alt" },
-    { id: "web", nombre: "Desarrollo Web & APIs", icono: "fas fa-laptop-code" },
     { id: "onpremise", nombre: "Infraestructura & On-Premise", icono: "fas fa-server" },
-    { id: "ajuscofix", nombre: "Hardware, Redes & Soporte IT", icono: "fas fa-tools" }
+    { id: "ajuscofix", nombre: "Sistemas Operativos, Software & IT", icono: "fas fa-tools" }
   ],
 
   servicios: [
+    {
+      id: "sitios-web-a-medida",
+      categoria: "web",
+      titulo: "Desarrollo de Sitios Web en Base a tu Necesidad",
+      destacado: true,
+      descripcion: "Diseño y desarrollo de sitios web modernos, landing pages, catálogos en línea y portales autoadministrables adaptados a tu objetivo comercial y presupuesto. Ligeros, ultrarrápidos, optimizados para celulares y con conexión directa a WhatsApp y Telegram.",
+      detalles: [
+        "Desarrollo a la medida de tu negocio, sin plantillas genéricas lentas",
+        "Optimización para dispositivos móviles y posicionamiento en Google (SEO)",
+        "Conexión directa con WhatsApp, Telegram y cotizador interactivo",
+        "Opciones de hosting gratuito o autoadministrado de bajo costo"
+      ],
+      tiempo: "3 a 7 días según requerimiento",
+      precioDesde: "Cotización a medida",
+      icono: "fas fa-globe"
+    },
+    {
+      id: "automatizacion-procesos",
+      categoria: "web",
+      titulo: "Mejora & Automatización de Procesos en Múltiples Áreas",
+      destacado: true,
+      descripcion: "Transformación digital de flujos de trabajo en recursos humanos, inventarios, compras, almacén, ventas y soporte. Eliminamos la captura manual en hojas de cálculo y procesadores de texto mediante scripts automáticos, validaciones y tableros interactivos.",
+      detalles: [
+        "Eliminación de tareas repetitivas en Excel y Word mediante automatización",
+        "Scripts en Python, PowerShell y archivos BAT para integración de datos",
+        "Importación masiva, generación de reportes oficiales en PDF/Excel y bitácoras",
+        "Tableros web autoadministrables para monitoreo y seguimiento operativo"
+      ],
+      tiempo: "Por sprint o proyecto",
+      precioDesde: "Cotización a medida",
+      icono: "fas fa-cogs"
+    },
+    {
+      id: "so-paqueterias-software",
+      categoria: "ajuscofix",
+      titulo: "Sistemas Operativos, Paqueterías & Software (Comercial y Open Source)",
+      destacado: true,
+      descripcion: "Instalación, configuración y mantenimiento de sistemas operativos (Windows, Linux, macOS), paqueterías de productividad (Office, LibreOffice), software administrativo (COI, NOI, SUA, ERP) y asesoría para migrar a soluciones Open Source de costo cero.",
+      detalles: [
+        "Instalación limpia de Windows (11/10/Server), distribuciones Linux y macOS",
+        "Despliegue de suites de productividad: Microsoft Office 365, LibreOffice y OpenOffice",
+        "Implementación de software administrativo, contable (COI, NOI, SUA) y ERP SAI/SICIA",
+        "Asesoría para sustitución de licencias costosas por software Open Source de calidad"
+      ],
+      tiempo: "Mismo día / 24 hrs",
+      precioDesde: "Cotización a medida",
+      icono: "fas fa-laptop"
+    },
     {
       id: "ia-onpremise-rag",
       categoria: "ia",
@@ -181,8 +225,8 @@ const SITE_DATA = {
     {
       id: "plataformas-web-hub",
       categoria: "web",
-      titulo: "Desarrollo Web Full-Stack & HUB de Aplicaciones",
-      destacado: true,
+      titulo: "Desarrollo Web Full-Stack & HUB de Aplicaciones Corporativo",
+      destacado: false,
       descripcion: "Desarrollo de portales web corporativos, tableros autoadministrables, sistemas transaccionales y HUBs de aplicaciones con autenticación unificada (SSO).",
       detalles: [
         "Frontend moderno con React, Vite y TailwindCSS de alta velocidad",
@@ -421,7 +465,19 @@ const SITE_DATA = {
 
   faqs: [
     {
-      q: "¿Qué tipo de soluciones de Inteligencia Artificial desarrollas para empresas?",
+      q: "¿Cómo abordan el desarrollo de sitios web en base a la necesidad del cliente?",
+      a: "No utilizo plantillas genéricas pesadas ni soluciones que te aten a costos mensuales ocultos. Analizo tu giro comercial, tus servicios y tu público meta para desarrollar un sitio web a la medida (landing page, catálogo, o portal comercial) ultrarrápido, optimizado para celulares, con posicionamiento en Google (SEO) e integración directa con WhatsApp y Telegram para captar clientes desde el primer día."
+    },
+    {
+      q: "¿En qué consiste la mejora y automatización de procesos en las distintas áreas de un negocio?",
+      a: "Identifico cuellos de botella y tareas manuales repetitivas en recursos humanos, inventarios, compras, almacén, facturación y soporte. Mediante scripts especializados en Python, PowerShell y archivos BAT, automatizo la captura de datos, la importación/exportación masiva entre sistemas, la generación oficial de reportes en PDF/Excel y el diseño de tableros autoadministrables para seguimiento en tiempo real."
+    },
+    {
+      q: "¿Instalan y configuran software comercial, libre y alternativas Open Source?",
+      a: "Sí. Ofrezco instalación limpia y optimización de sistemas operativos (Windows 11/10/Server, distribuciones Linux como Ubuntu y Fedora, y macOS), paqueterías de oficina (Office 365, LibreOffice), software de diseño (Adobe, Corel) y herramientas administrativas (COI, NOI, SUA, ERP). Además, brindo asesoría para que pequeñas y medianas empresas puedan sustituir licencias comerciales costosas por alternativas Open Source y software libre de alto rendimiento con costo cero de licenciamiento."
+    },
+    {
+      q: "¿Qué tipo de soluciones de Inteligencia Artificial desarrollan para empresas?",
       a: "Desarrollo soluciones de IA con un enfoque estricto en privacidad y soberanía de datos (On-Premise). Implemento sistemas RAG (Retrieval-Augmented Generation) sobre pgvector y modelos abiertos con Ollama para que tu empresa pueda consultar millones de documentos internos sin enviar información confidencial a servidores externos. También orquesto sistemas multiagente con LangGraph con validación humana en cada paso crítico y conectores seguros Model Context Protocol (MCP)."
     },
     {
@@ -429,16 +485,8 @@ const SITE_DATA = {
       a: "Especialidad en desarrollo nativo para Android en Kotlin puro con Jetpack Compose y Clean Architecture (como el caso de éxito de Banderazo). Esto garantiza que la aplicación funcione a máxima velocidad, sin trabarse, consuma el mínimo de batería y pueda operar 100% sin conexión a internet mediante bases de datos locales en Room y geolocalización satelital pura."
     },
     {
-      q: "¿Cómo se aborda la seguridad y el despliegue en infraestructura propia (On-Premise)?",
-      a: "A través de contenedores Docker orquestados, proxies inversos nginx/Traefik con SSL automático, Single Sign-On (SSO) con tokens JWT RS256 y gestión corporativa de credenciales mediante Vaultwarden, eliminando contraseñas dispersas en código, junto con prácticas defensivas de ciberseguridad."
-    },
-    {
-      q: "¿Qué servicios ofrece la división AjuscoFix en soporte y redes?",
-      a: "AjuscoFix es la rama especializada en infraestructura física: cableado estructurado Cat 6/6A, eliminación de zonas muertas con Wi-Fi Mesh unificado, configuración de servidores de respaldo NAS, conmutadores, cámaras de seguridad, mantenimiento preventivo/correctivo a nivel componente para equipos gamer y de oficina, formateo limpio con respaldo espejo garantizado y recuperación de datos."
-    },
-    {
       q: "¿Cómo agendamos una cotización o consulta técnica?",
-      a: "Puedes contactarme directamente por WhatsApp al 55 5969 4250, por Telegram al @+525559694250, o escribirme a arturo.urbina.velasco@gmail.com con los detalles de tu proyecto o requerimiento. Atiendo proyectos de desarrollo a nivel nacional e internacional, y servicios presenciales de hardware y redes en la Ciudad de México y zona metropolitana."
+      a: "Puedes contactarme directamente por WhatsApp al 55 5969 4250, por Telegram al @+525559694250, o escribirme a arturo.urbina.velasco@gmail.com con los detalles de tu proyecto o requerimiento. Atiendo proyectos de desarrollo a nivel nacional e internacional, y servicios presenciales de hardware, software y redes en la Ciudad de México y zona metropolitana."
     }
   ]
 };

@@ -226,11 +226,11 @@ function initCotizador() {
   // Poblar categorías
   catSelect.innerHTML = `
     <option value="">-- Selecciona una especialidad --</option>
+    <option value="web">Sitios Web a Medida & Automatización de Procesos</option>
+    <option value="ajuscofix">Sistemas Operativos, Software (Comercial / Libre) & Hardware</option>
     <option value="ia">Inteligencia Artificial & RAG On-Premise</option>
-    <option value="movil">Desarrollo de App Móvil Android / Multiplataforma</option>
-    <option value="web">Desarrollo Web Full-Stack & HUB de Aplicaciones</option>
-    <option value="onpremise">Infraestructura On-Premise, Docker & Servidores</option>
-    <option value="ajuscofix">Soporte IT, Hardware y Redes (AjuscoFix)</option>
+    <option value="movil">Desarrollo de App Móvil Android (Kotlin / Offline)</option>
+    <option value="onpremise">Infraestructura On-Premise, Docker & Redes</option>
   `;
 
   catSelect.addEventListener("change", () => {
