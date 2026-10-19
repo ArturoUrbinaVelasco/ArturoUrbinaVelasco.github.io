@@ -251,6 +251,18 @@ a {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
 }
 
+.btn-telegram {
+  background: #229ED9;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(34, 158, 217, 0.3);
+}
+
+.btn-telegram:hover {
+  transform: translateY(-2px);
+  background: #1e8ec5;
+  box-shadow: 0 6px 20px rgba(34, 158, 217, 0.45);
+}
+
 .theme-toggle-btn {
   background: none;
   border: 1px solid var(--border-color);
@@ -697,10 +709,24 @@ a {
 }
 
 .summary-row.total {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border-color);
   margin-top: 1rem;
-  font-size: 1.25rem;
+}
+
+.summary-row.total span:first-child {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.summary-row.total span:last-child {
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--accent-cyan);
 }
@@ -974,6 +1000,29 @@ a {
   border: 2px solid #fff;
 }
 
+/* Floating Telegram Button */
+.telegram-float {
+  position: fixed;
+  bottom: 6.25rem;
+  right: 2.25rem;
+  width: 52px;
+  height: 52px;
+  background: #229ED9;
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 20px rgba(34, 158, 217, 0.4);
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.telegram-float:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 30px rgba(34, 158, 217, 0.6);
+}
+
 /* Footer */
 footer {
   padding: 2.5rem 0;
@@ -1037,6 +1086,12 @@ footer {
   }
   .hero-buttons .btn {
     width: 100%;
+  }
+  .competencias-grid {
+    grid-template-columns: 1fr;
+  }
+  .hide-mobile {
+    display: none;
   }
 }
 

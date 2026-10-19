@@ -216,8 +216,10 @@ function initCotizador() {
   
   const summaryServicio = document.getElementById("summaryServicio");
   const summaryTiempo = document.getElementById("summaryTiempo");
+  const summaryPrioridad = document.getElementById("summaryPrioridad");
   const summaryEstimado = document.getElementById("summaryEstimado");
   const btnEnviar = document.getElementById("btnCotizadorWhatsApp");
+  const btnTelegram = document.getElementById("btnCotizadorTelegram");
 
   if (!catSelect || !servicioSelect) return;
 
@@ -260,31 +262,52 @@ function initCotizador() {
     });
   }
 
+  if (detallesInput) {
+    detallesInput.addEventListener("input", () => {
+      const sId = servicioSelect.value;
+      const sObj = SITE_DATA.servicios.find(s => s.id === sId);
+      actualizarResumen(sObj);
+    });
+  }
+
   function actualizarResumen(servicio) {
+    const urgenciaOption = urgenciaSelect ? urgenciaSelect.options[urgenciaSelect.selectedIndex] : null;
+    const pct = urgenciaOption ? urgenciaOption.getAttribute("data-pct") || urgenciaOption.value || "0" : "0";
+    const urgenciaTxt = urgenciaOption ? urgenciaOption.text : "Estándar (+0%)";
+
     if (!servicio) {
       summaryServicio.textContent = "Ninguno seleccionado";
       summaryTiempo.textContent = "--";
-      summaryEstimado.textContent = "$0 MXN";
+      if (summaryPrioridad) summaryPrioridad.textContent = `Estándar (+${pct}%)`;
+      summaryEstimado.textContent = "Cotización a medida";
       btnEnviar.setAttribute("href", `${SITE_DATA.info.redes.whatsapp}?text=Hola%20Arturo,%20me%20gustar%C3%ADa%20una%20consulta%20técnica`);
+      if (btnTelegram) btnTelegram.setAttribute("href", SITE_DATA.info.redes.telegram);
       return;
     }
 
     summaryServicio.textContent = servicio.titulo;
     summaryTiempo.textContent = servicio.tiempo;
-    summaryEstimado.textContent = servicio.precioDesde;
+    if (summaryPrioridad) {
+      const nombreEsquema = urgenciaTxt.split("(")[0].trim();
+      summaryPrioridad.textContent = `${nombreEsquema} (+${pct}%)`;
+    }
+    
+    summaryEstimado.textContent = Number(pct) > 0 ? `Cotización a medida (+${pct}% prioridad)` : "Cotización a medida";
 
-    const urgenciaTxt = urgenciaSelect ? urgenciaSelect.options[urgenciaSelect.selectedIndex].text : "Estándar";
-    const notas = detallesInput && detallesInput.value.trim() ? `\n• Detalles adicionales: ${detallesInput.value.trim()}` : "";
+    const notas = detallesInput && detallesInput.value.trim() ? `\n• Requerimiento / Notas: ${detallesInput.value.trim()}` : "";
 
     const mensaje = 
       `Hola Arturo, solicito información y cotización para:\n` +
       `📌 *${servicio.titulo}*\n` +
       `⏱️ Tiempo habitual: ${servicio.tiempo}\n` +
-      `💵 Referencia: ${servicio.precioDesde}\n` +
-      `⚡ Prioridad / Esquema: ${urgenciaTxt}` +
+      `⚡ Esquema de Prioridad: ${urgenciaTxt} (+${pct}% ajuste)\n` +
+      `💵 Referencia Base: ${servicio.precioDesde}` +
       notas + `\n\n¿Cuándo podríamos agendar una llamada o revisión técnica?`;
 
     btnEnviar.setAttribute("href", `${SITE_DATA.info.redes.whatsapp}?text=${encodeURIComponent(mensaje)}`);
+    if (btnTelegram) {
+      btnTelegram.setAttribute("href", SITE_DATA.info.redes.telegram);
+    }
   }
 }
 
