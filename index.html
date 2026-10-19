@@ -39,16 +39,20 @@
       </a>
 
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#inicio" class="nav-link">Inicio</a></li>
-        <li><a href="#competencias" class="nav-link">Stack & IA</a></li>
-        <li><a href="#proyectos" class="nav-link">Portafolio</a></li>
-        <li><a href="#trayectoria" class="nav-link">Trayectoria</a></li>
-        <li><a href="#servicios" class="nav-link">Servicios</a></li>
-        <li><a href="#cotizador" class="nav-link">Cotizador</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#inicio" class="nav-link" data-i18n="navInicio">Inicio</a></li>
+        <li><a href="#competencias" class="nav-link" data-i18n="navStack">Stack & IA</a></li>
+        <li><a href="#proyectos" class="nav-link" data-i18n="navPortafolio">Portafolio</a></li>
+        <li><a href="#trayectoria" class="nav-link" data-i18n="navTrayectoria">Trayectoria</a></li>
+        <li><a href="#servicios" class="nav-link" data-i18n="navServicios">Servicios</a></li>
+        <li><a href="#cotizador" class="nav-link" data-i18n="navCotizador">Cotizador</a></li>
+        <li><a href="#contacto" class="nav-link" data-i18n="navContacto">Contacto</a></li>
       </ul>
 
       <div class="nav-actions">
+        <button class="lang-toggle-btn" id="langToggle" aria-label="Cambiar idioma" title="Switch to English">
+          <i class="fas fa-globe"></i> <span id="langLabel">EN</span>
+        </button>
+
         <button class="theme-toggle-btn" id="themeToggle" aria-label="Cambiar tema">
           <i class="fas fa-sun"></i>
         </button>
@@ -76,45 +80,45 @@
       <div class="hero-content">
         <div>
           <div class="badge hero-tag">
-            <i class="fas fa-layer-group"></i> Múltiples Lenguajes & Tecnologías · IA Aplicada · 13+ Años
+            <i class="fas fa-layer-group"></i> <span data-i18n="heroTag">Múltiples Lenguajes & Tecnologías · IA Aplicada · 13+ Años</span>
           </div>
           <h1 class="hero-title">
-            Software Empresarial, <span class="text-gradient">Sitios Web a Medida</span>, Automatización e IA
+            <span data-i18n="heroTitle1">Software Empresarial, </span><span class="text-gradient" data-i18n="heroTitleGradient">Sitios Web a Medida</span><span data-i18n="heroTitle2">, Automatización e IA</span>
           </h1>
-          <p class="hero-description">
+          <p class="hero-description" data-i18n="heroDesc">
             Más de 13 años construyendo software de extremo a extremo en múltiples lenguajes y tecnologías. Desarrollo de sitios web en base a tu necesidad, mejora y automatización de procesos en múltiples áreas (eliminación de flujos manuales), instalación y soporte de sistemas operativos y paqueterías (comercial, software libre y open source), aplicaciones móviles nativas, IA On-Premise y la división de infraestructura y soporte <strong>AjuscoFix</strong>.
           </p>
           <div class="hero-buttons">
             <a href="#proyectos" class="btn btn-primary">
-              <i class="fas fa-folder-open"></i> Ver Portafolio Técnico
+              <i class="fas fa-folder-open"></i> <span data-i18n="heroBtnProjects">Ver Portafolio Técnico</span>
             </a>
             <a href="https://wa.me/525559694250?text=Hola%20Arturo,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20t%C3%A9cnica" target="_blank" rel="noopener" class="btn btn-whatsapp">
-              <i class="fab fa-whatsapp"></i> WhatsApp
+              <i class="fab fa-whatsapp"></i> <span data-i18n="heroBtnWa">WhatsApp</span>
             </a>
             <a href="https://t.me/+525559694250" target="_blank" rel="noopener" class="btn btn-telegram">
-              <i class="fab fa-telegram"></i> Telegram
+              <i class="fab fa-telegram"></i> <span data-i18n="heroBtnTg">Telegram</span>
             </a>
             <a href="https://github.com/ArturoUrbinaVelasco" target="_blank" rel="noopener" class="btn btn-secondary">
-              <i class="fab fa-github"></i> GitHub
+              <i class="fab fa-github"></i> <span data-i18n="heroBtnGithub">GitHub</span>
             </a>
           </div>
 
           <div class="hero-badges">
             <div class="hero-badge-item">
               <i class="fas fa-check-circle"></i>
-              <span>Sitios Web en Base a Necesidad</span>
+              <span data-i18n="heroBadgeWeb">Sitios Web en Base a Necesidad</span>
             </div>
             <div class="hero-badge-item">
               <i class="fas fa-check-circle"></i>
-              <span>Automatización de Procesos (Python/BAT)</span>
+              <span data-i18n="heroBadgeAuto">Automatización de Procesos (Python/BAT)</span>
             </div>
             <div class="hero-badge-item">
               <i class="fas fa-check-circle"></i>
-              <span>Sistemas Operativos, Software Comercial & Open Source</span>
+              <span data-i18n="heroBadgeSO">Sistemas Operativos, Software Comercial & Open Source</span>
             </div>
             <div class="hero-badge-item">
               <i class="fas fa-check-circle"></i>
-              <span>IA Privada sin fuga de datos (On-Premise)</span>
+              <span data-i18n="heroBadgeIA">IA Privada sin fuga de datos (On-Premise)</span>
             </div>
           </div>
         </div>
@@ -133,42 +137,42 @@
           <div class="terminal-body">
             <div class="terminal-line">
               <span class="terminal-prompt">$</span>
-              <span>enterprise-ai --rag-status</span>
+              <span data-i18n="terminalPrompt1">enterprise-ai --rag-status</span>
             </div>
             <div class="terminal-line">
-              <span style="color: var(--accent-emerald);">[OK]</span>
-              <span>pgvector (HNSW) + RRF Reranking activo en servidores locales</span>
-            </div>
-            <div class="terminal-line">
-              <span class="terminal-prompt">$</span>
-              <span>multiagente --langgraph</span>
-            </div>
-            <div class="terminal-line">
-              <span style="color: var(--accent-cyan);">[ACTIVO]</span>
-              <span>7 agentes de área + 13 subagentes con Ollama (qwen2.5-coder)</span>
+              <span style="color: var(--accent-emerald);" data-i18n="terminalTagOk">[OK]</span>
+              <span data-i18n="terminalStatus1">pgvector (HNSW) + RRF Reranking activo en servidores locales</span>
             </div>
             <div class="terminal-line">
               <span class="terminal-prompt">$</span>
-              <span>mcp-protocol --status</span>
+              <span data-i18n="terminalPrompt2">multiagente --langgraph</span>
             </div>
             <div class="terminal-line">
-              <span style="color: var(--text-muted);">[CONECTADO]</span>
-              <span>Model Context Protocol a PostgreSQL en solo lectura</span>
-            </div>
-            <div class="terminal-line">
-              <span class="terminal-prompt">$</span>
-              <span>banderazo-android --version</span>
-            </div>
-            <div class="terminal-line">
-              <span class="terminal-highlight">Banderazo v0.3.0 Release · Kotlin Satelital Puro (690+ tests OK)</span>
+              <span style="color: var(--accent-cyan);" data-i18n="terminalTagActive">[ACTIVO]</span>
+              <span data-i18n="terminalStatus2">7 agentes de área + 13 subagentes con Ollama (qwen2.5-coder)</span>
             </div>
             <div class="terminal-line">
               <span class="terminal-prompt">$</span>
-              <span>dicom-pacs --mirth-connect</span>
+              <span data-i18n="terminalPrompt3">mcp-protocol --status</span>
             </div>
             <div class="terminal-line">
-              <span style="color: var(--accent-emerald);">[EN LÍNEA]</span>
-              <span>Interoperabilidad hospitalaria en centros médicos públicos y privados</span>
+              <span style="color: var(--text-muted);" data-i18n="terminalTagConnected">[CONECTADO]</span>
+              <span data-i18n="terminalStatus3">Model Context Protocol a PostgreSQL en solo lectura</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span data-i18n="terminalPrompt4">banderazo-android --version</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-highlight" data-i18n="terminalStatus4">Banderazo v0.3.0 Release · Kotlin Satelital Puro (690+ tests OK)</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span data-i18n="terminalPrompt5">dicom-pacs --mirth-connect</span>
+            </div>
+            <div class="terminal-line">
+              <span style="color: var(--accent-emerald);" data-i18n="terminalTagOnline">[EN LÍNEA]</span>
+              <span data-i18n="terminalStatus5">Interoperabilidad hospitalaria en centros médicos públicos y privados</span>
             </div>
           </div>
         </div>
@@ -193,9 +197,9 @@
   <section class="section" id="competencias" style="background: rgba(0, 0, 0, 0.1);">
     <div class="container">
       <div class="section-header">
-        <div class="badge section-tag"><i class="fas fa-cubes"></i> Dominio Tecnológico</div>
-        <h2 class="section-title">Competencias Técnicas & Stack de Ingeniería</h2>
-        <p class="section-description">
+        <div class="badge section-tag"><i class="fas fa-cubes"></i> <span data-i18n="competenciasTag">Dominio Tecnológico</span></div>
+        <h2 class="section-title" data-i18n="competenciasTitle">Competencias Técnicas & Stack de Ingeniería</h2>
+        <p class="section-description" data-i18n="competenciasDesc">
           Arquitectura integral que abarca desde la inferencia de Inteligencia Artificial en servidores propios hasta el hardware hospitalario, sistemas administrativos y aplicaciones móviles nativas.
         </p>
       </div>
@@ -212,9 +216,9 @@
   <section class="section" id="proyectos">
     <div class="container">
       <div class="section-header">
-        <div class="badge section-tag"><i class="fas fa-project-diagram"></i> Casos Reales en Producción</div>
-        <h2 class="section-title">Portafolio Técnico & Soluciones</h2>
-        <p class="section-description">
+        <div class="badge section-tag"><i class="fas fa-project-diagram"></i> <span data-i18n="proyectosTag">Casos Reales en Producción</span></div>
+        <h2 class="section-title" data-i18n="proyectosTitle">Portafolio Técnico & Soluciones</h2>
+        <p class="section-description" data-i18n="proyectosDesc">
           Sistemas empresariales en operación continua, infraestructura de IA On-Premise y aplicaciones móviles desarrolladas con los más altos estándares de calidad (Clean Code y pruebas automáticas).
         </p>
       </div>
@@ -231,9 +235,9 @@
   <section class="section timeline-section" id="trayectoria">
     <div class="container">
       <div class="section-header">
-        <div class="badge section-tag"><i class="fas fa-history"></i> Experiencia Comprobada</div>
-        <h2 class="section-title">Trayectoria Profesional (2009 – 2026)</h2>
-        <p class="section-description">
+        <div class="badge section-tag"><i class="fas fa-history"></i> <span data-i18n="trayectoriaTag">Experiencia Comprobada</span></div>
+        <h2 class="section-title" data-i18n="trayectoriaTitle">Trayectoria Profesional (2009 – 2026)</h2>
+        <p class="section-description" data-i18n="trayectoriaDesc">
           Más de 13 años participando en el ciclo completo de vida del software, desde el levantamiento de requerimientos y modelado de datos hasta el despliegue y soporte operativo.
         </p>
       </div>
@@ -250,9 +254,9 @@
   <section class="section" id="servicios" style="background: rgba(0, 0, 0, 0.15);">
     <div class="container">
       <div class="section-header">
-        <div class="badge section-tag"><i class="fas fa-cogs"></i> Soluciones Especializadas</div>
-        <h2 class="section-title">Servicios de Desarrollo, IA & Soporte IT</h2>
-        <p class="section-description">
+        <div class="badge section-tag"><i class="fas fa-cogs"></i> <span data-i18n="serviciosTag">Soluciones Especializadas</span></div>
+        <h2 class="section-title" data-i18n="serviciosTitle">Servicios de Desarrollo, IA & Soporte IT</h2>
+        <p class="section-description" data-i18n="serviciosDesc">
           Soluciones de ingeniería a la medida para empresas y organizaciones, complementadas con el soporte técnico y de redes de la división AjuscoFix.
         </p>
       </div>
@@ -275,9 +279,9 @@
   <section class="section cotizador-section" id="cotizador">
     <div class="container">
       <div class="section-header">
-        <div class="badge section-tag"><i class="fas fa-calculator"></i> Cotizador & Diagnóstico</div>
-        <h2 class="section-title">Calcula y Agenda tu Solución Técnica</h2>
-        <p class="section-description">
+        <div class="badge section-tag"><i class="fas fa-calculator"></i> <span data-i18n="cotizadorTag">Cotizador & Diagnóstico</span></div>
+        <h2 class="section-title" data-i18n="cotizadorTitle">Calcula y Agenda tu Solución Técnica</h2>
+        <p class="section-description" data-i18n="cotizadorDesc">
           Selecciona tu necesidad y esquema de entrega para generar un mensaje estructurado y coordinar una consulta técnica directa.
         </p>
       </div>
@@ -286,64 +290,61 @@
         <div class="cotizador-steps">
           <div>
             <div class="form-group">
-              <label class="form-label" for="cotizadorCategoria">1. Especialidad técnica requerida:</label>
+              <label class="form-label" for="cotizadorCategoria" data-i18n="cotizadorStep1">1. Especialidad técnica requerida:</label>
               <select class="form-select" id="cotizadorCategoria">
                 <!-- Opciones dinámicas -->
               </select>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="cotizadorServicio">2. Servicio o solución específica:</label>
+              <label class="form-label" for="cotizadorServicio" data-i18n="cotizadorStep2">2. Servicio o solución específica:</label>
               <select class="form-select" id="cotizadorServicio">
                 <option value="">-- Primero elige una especialidad --</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="cotizadorUrgencia">3. Nivel de prioridad / esquema (% de ajuste):</label>
+              <label class="form-label" for="cotizadorUrgencia" data-i18n="cotizadorStep3">3. Nivel de prioridad / esquema (% de ajuste):</label>
               <select class="form-select" id="cotizadorUrgencia">
-                <option value="0" data-pct="0">Esquema Estándar (+0% · Tiempo habitual)</option>
-                <option value="15" data-pct="15">Prioritario (+15% · Atención preferente)</option>
-                <option value="25" data-pct="25">Alta Prioridad (+25% · Despliegue acelerado)</option>
-                <option value="50" data-pct="50">Urgencia Inmediata / Fin de semana (+50% · Atención 24/7)</option>
+                <!-- Opciones dinámicas con porcentajes -->
               </select>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="cotizadorDetalles">4. Notas técnicas, equipo o requerimiento:</label>
-              <input type="text" class="form-input" id="cotizadorDetalles" placeholder="Ej: Implementación RAG, App Android, Servidor NAS, ERP, Laptop...">
+              <label class="form-label" for="cotizadorDetalles" data-i18n="cotizadorStep4">4. Notas técnicas, equipo o requerimiento:</label>
+              <input type="text" class="form-input" id="cotizadorDetalles" data-i18n="cotizadorPlaceholderNotes" placeholder="Ej: Implementación RAG, App Android, Servidor NAS, ERP, Laptop...">
             </div>
           </div>
 
           <div class="cotizador-summary">
             <div>
-              <h3 class="summary-title"><i class="fas fa-receipt text-gradient"></i> Resumen de tu Solicitud</h3>
+              <h3 class="summary-title"><i class="fas fa-receipt text-gradient"></i> <span data-i18n="cotizadorSummaryTitle">Resumen de tu Solicitud</span></h3>
               <div class="summary-row">
-                <span>Solución seleccionada:</span>
+                <span data-i18n="cotizadorSummarySelected">Solución seleccionada:</span>
                 <strong id="summaryServicio" style="color: var(--text-primary); text-align: right;">Ninguna seleccionada</strong>
               </div>
               <div class="summary-row">
-                <span>Tiempo habitual de entrega:</span>
+                <span data-i18n="cotizadorSummaryTime">Tiempo habitual de entrega:</span>
                 <span id="summaryTiempo">--</span>
               </div>
               <div class="summary-row">
-                <span>Esquema de prioridad:</span>
+                <span data-i18n="cotizadorSummaryPriority">Esquema de prioridad:</span>
                 <span id="summaryPrioridad" style="color: var(--accent-cyan); font-weight: 600;">Estándar (+0%)</span>
               </div>
               <div class="summary-row total">
-                <span>Referencia base:</span>
+                <span data-i18n="cotizadorSummaryBase">Referencia base:</span>
                 <span id="summaryEstimado">Cotización a medida</span>
               </div>
             </div>
 
             <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.65rem;">
               <a href="#" id="btnCotizadorWhatsApp" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%; padding: 0.85rem;">
-                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> <span>Solicitar por WhatsApp</span>
+                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> <span data-i18n="cotizadorBtnWa">Solicitar por WhatsApp</span>
               </a>
               <a href="#" id="btnCotizadorTelegram" target="_blank" rel="noopener" class="btn btn-telegram" style="width: 100%; padding: 0.85rem;">
-                <i class="fab fa-telegram" style="font-size: 1.2rem;"></i> <span>Solicitar por Telegram</span>
+                <i class="fab fa-telegram" style="font-size: 1.2rem;"></i> <span data-i18n="cotizadorBtnTg">Solicitar por Telegram</span>
               </a>
-              <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.25rem;">
+              <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.25rem;" data-i18n="cotizadorDirectReply">
                 Respuesta directa de Arturo Urbina Velasco.
               </p>
             </div>
@@ -360,34 +361,34 @@
     <div class="container">
       <div class="about-grid">
         <div>
-          <div class="badge section-tag"><i class="fas fa-user-check"></i> Filosofía & Estándares</div>
-          <h2 class="section-title">Arturo Urbina Velasco</h2>
-          <h3 style="font-size: 1.15rem; color: var(--accent-cyan); margin-bottom: 1rem;">
+          <div class="badge section-tag"><i class="fas fa-user-check"></i> <span data-i18n="aboutTag">Filosofía & Estándares</span></div>
+          <h2 class="section-title" data-i18n="aboutTitle">Arturo Urbina Velasco</h2>
+          <h3 style="font-size: 1.15rem; color: var(--accent-cyan); margin-bottom: 1rem;" data-i18n="aboutSubtitle">
             Desarrollador de Aplicaciones Senior | Múltiples Lenguajes, Tecnologías & IA Aplicada
           </h3>
-          <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
+          <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;" data-i18n="aboutP1">
             Mi compromiso profesional es construir software que resista el paso del tiempo y resuelva problemas críticos de negocio: desde mantener la privacidad absoluta de los datos de un hospital mediante modelos de Inteligencia Artificial que jamás tocan servidores externos, hasta asegurar que una aplicación móvil funcione con exactitud matemática al centavo en medio del tráfico de la CDMX.
           </p>
-          <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;">
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;" data-i18n="aboutP2">
             A través de <strong>AjuscoFix</strong>, mantengo una conexión directa con la infraestructura física y el soporte de hardware, garantizando que cada computadora, servidor o red local funcione a su máxima capacidad térmica y operativa.
           </p>
 
           <div class="about-features">
             <div class="about-feature-box">
-              <h4><i class="fas fa-globe"></i> Sitios Web a Medida</h4>
-              <p>Landing pages, catálogos y portales adaptados exactamente a tu necesidad.</p>
+              <h4><i class="fas fa-globe"></i> <span data-i18n="aboutBox1Title">Sitios Web a Medida</span></h4>
+              <p data-i18n="aboutBox1Desc">Landing pages, catálogos y portales adaptados exactamente a tu necesidad.</p>
             </div>
             <div class="about-feature-box">
-              <h4><i class="fas fa-cogs"></i> Automatización</h4>
-              <p>Scripts en Python/BAT que eliminan trabajo manual en múltiples áreas.</p>
+              <h4><i class="fas fa-cogs"></i> <span data-i18n="aboutBox2Title">Automatización</span></h4>
+              <p data-i18n="aboutBox2Desc">Scripts en Python/BAT que eliminan trabajo manual en múltiples áreas.</p>
             </div>
             <div class="about-feature-box">
-              <h4><i class="fab fa-windows"></i> SO & Software Libre</h4>
-              <p>Windows, Linux, macOS, Office, suites libres y migración Open Source.</p>
+              <h4><i class="fab fa-windows"></i> <span data-i18n="aboutBox3Title">SO & Software Libre</span></h4>
+              <p data-i18n="aboutBox3Desc">Windows, Linux, macOS, Office, suites libres y migración Open Source.</p>
             </div>
             <div class="about-feature-box">
-              <h4><i class="fas fa-brain"></i> IA On-Premise & Mobile</h4>
-              <p>RAG local sin fuga de datos, sistemas multiagente y apps nativas en Kotlin.</p>
+              <h4><i class="fas fa-brain"></i> <span data-i18n="aboutBox4Title">IA On-Premise & Mobile</span></h4>
+              <p data-i18n="aboutBox4Desc">RAG local sin fuga de datos, sistemas multiagente y apps nativas en Kotlin.</p>
             </div>
           </div>
         </div>
@@ -399,8 +400,8 @@
                 <i class="fas fa-graduation-cap"></i>
               </div>
               <div>
-                <h4 style="font-size: 1.2rem;">Formación Académica & Enfoque Técnico</h4>
-                <span style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">Sustento Académico y Práctico</span>
+                <h4 style="font-size: 1.2rem;" data-i18n="aboutEduTitle">Formación Académica & Enfoque Técnico</h4>
+                <span style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;" data-i18n="aboutEduSub">Sustento Académico y Práctico</span>
               </div>
             </div>
 
@@ -408,29 +409,29 @@
               <li style="margin-bottom: 1.15rem; display: flex; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
                 <i class="fas fa-id-card" style="color: var(--accent-emerald); margin-top: 0.2rem;"></i>
                 <div>
-                  <strong style="color: var(--text-primary); display: block;">Técnico en Informática · CECyTEM</strong>
-                  <span>Colegio de Estudios Científicos y Tecnológicos del Estado de México</span>
+                  <strong style="color: var(--text-primary); display: block;" data-i18n="aboutEdu1Title">Técnico en Informática · CECyTEM</strong>
+                  <span data-i18n="aboutEdu1Desc">Colegio de Estudios Científicos y Tecnológicos del Estado de México</span>
                 </div>
               </li>
               <li style="margin-bottom: 1.15rem; display: flex; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
                 <i class="fas fa-university" style="color: var(--accent-cyan); margin-top: 0.2rem;"></i>
                 <div>
-                  <strong style="color: var(--text-primary); display: block;">Ingeniería en Informática · UPVM</strong>
-                  <span>Universidad Politécnica del Valle de México</span>
+                  <strong style="color: var(--text-primary); display: block;" data-i18n="aboutEdu2Title">Ingeniería en Informática · UPVM</strong>
+                  <span data-i18n="aboutEdu2Desc">Universidad Politécnica del Valle de México</span>
                 </div>
               </li>
               <li style="margin-bottom: 1.15rem; display: flex; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
                 <i class="fas fa-shield-alt" style="color: var(--accent-amber); margin-top: 0.2rem;"></i>
                 <div>
-                  <strong style="color: var(--text-primary); display: block;">Ciberseguridad Defensiva & Análisis Forense</strong>
-                  <span>Ingeniería inversa, recuperación de medios magnéticos/sólidos y seguridad de sistemas</span>
+                  <strong style="color: var(--text-primary); display: block;" data-i18n="aboutEdu3Title">Ciberseguridad Defensiva & Análisis Forense</strong>
+                  <span data-i18n="aboutEdu3Desc">Ingeniería inversa, recuperación de medios magnéticos/sólidos y seguridad de sistemas</span>
                 </div>
               </li>
             </ul>
 
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
               <a href="https://github.com/ArturoUrbinaVelasco" target="_blank" rel="noopener" class="btn btn-secondary" style="flex: 1;">
-                <i class="fab fa-github"></i> GitHub
+                <i class="fab fa-github"></i> <span data-i18n="heroBtnGithub">GitHub</span>
               </a>
               <a href="https://t.me/+525559694250" target="_blank" rel="noopener" class="btn btn-secondary" style="flex: 1;">
                 <i class="fab fa-telegram" style="color: #229ED9;"></i> Telegram
@@ -451,9 +452,9 @@
   <section class="section" id="faq" style="background: rgba(0, 0, 0, 0.15);">
     <div class="container">
       <div class="section-header">
-        <div class="badge section-tag"><i class="fas fa-question-circle"></i> Dudas Comunes</div>
-        <h2 class="section-title">Preguntas Frecuentes</h2>
-        <p class="section-description">
+        <div class="badge section-tag"><i class="fas fa-question-circle"></i> <span data-i18n="faqTag">Dudas Comunes</span></div>
+        <h2 class="section-title" data-i18n="faqTitle">Preguntas Frecuentes</h2>
+        <p class="section-description" data-i18n="faqDesc">
           Claridad técnica y metodológica sobre desarrollo de software, IA y servicios de infraestructura.
         </p>
       </div>
@@ -471,9 +472,9 @@
     <div class="container">
       <div class="contact-box">
         <div>
-          <div class="badge section-tag"><i class="fas fa-paper-plane"></i> Contacto Directo</div>
-          <h2 class="section-title">Iniciemos tu Proyecto o Solución</h2>
-          <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+          <div class="badge section-tag"><i class="fas fa-paper-plane"></i> <span data-i18n="contactTag">Contacto Directo</span></div>
+          <h2 class="section-title" data-i18n="contactTitle">Iniciemos tu Proyecto o Solución</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;" data-i18n="contactDesc">
             Disponible para consultoría técnica, desarrollo de software en múltiples tecnologías, agentes de IA On-Premise y soporte de infraestructura en sitio y remoto.
           </p>
 
@@ -481,7 +482,7 @@
             <div class="contact-info-item">
               <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
               <div>
-                <strong style="color: var(--text-primary); display: block;">WhatsApp Directo:</strong>
+                <strong style="color: var(--text-primary); display: block;" data-i18n="contactWaLabel">WhatsApp Directo:</strong>
                 <a href="https://wa.me/525559694250" target="_blank" rel="noopener" style="color: var(--accent-cyan);">55 5969 4250</a>
               </div>
             </div>
@@ -489,7 +490,7 @@
             <div class="contact-info-item">
               <div class="contact-icon" style="background: rgba(34, 158, 217, 0.12); color: #229ED9;"><i class="fab fa-telegram"></i></div>
               <div>
-                <strong style="color: var(--text-primary); display: block;">Telegram Directo:</strong>
+                <strong style="color: var(--text-primary); display: block;" data-i18n="contactTgLabel">Telegram Directo:</strong>
                 <a href="https://t.me/+525559694250" target="_blank" rel="noopener" style="color: var(--accent-cyan);">@+525559694250</a>
               </div>
             </div>
@@ -497,7 +498,7 @@
             <div class="contact-info-item">
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div>
-                <strong style="color: var(--text-primary); display: block;">Correo Electrónico:</strong>
+                <strong style="color: var(--text-primary); display: block;" data-i18n="contactEmailLabel">Correo Electrónico:</strong>
                 <a href="mailto:arturo.urbina.velasco@gmail.com" style="color: var(--accent-cyan);">arturo.urbina.velasco@gmail.com</a>
               </div>
             </div>
@@ -505,8 +506,8 @@
             <div class="contact-info-item">
               <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
               <div>
-                <strong style="color: var(--text-primary); display: block;">Ubicación:</strong>
-                <span>Ciudad de México (Atención presencial, soporte en sitio y proyectos remotos)</span>
+                <strong style="color: var(--text-primary); display: block;" data-i18n="contactLocationLabel">Ubicación:</strong>
+                <span data-i18n="contactLocationVal">Ciudad de México (Atención presencial, soporte en sitio y proyectos remotos)</span>
               </div>
             </div>
           </div>
@@ -529,25 +530,25 @@
 
         <!-- Tarjeta de Acción Rápida -->
         <div style="display: flex; flex-direction: column; justify-content: center; background: rgba(0, 0, 0, 0.2); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-          <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">¿Tienes un requerimiento técnico o proyecto?</h3>
-          <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;" data-i18n="contactCardTitle">¿Tienes un requerimiento técnico o proyecto?</h3>
+          <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: 1.5rem;" data-i18n="contactCardDesc">
             Escríbeme directamente por WhatsApp o Telegram para coordinar una llamada de diagnóstico o propuesta técnica:
           </p>
 
           <a href="https://wa.me/525559694250?text=Hola%20Arturo,%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto%20de%20desarrollo%20/%20soporte" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 1rem; font-size: 1.05rem; margin-bottom: 0.75rem;">
-            <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> <span>Iniciar por WhatsApp</span>
+            <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> <span data-i18n="contactCardBtnWa">Iniciar por WhatsApp</span>
           </a>
 
           <a href="https://t.me/+525559694250" target="_blank" rel="noopener" class="btn btn-telegram" style="padding: 1rem; font-size: 1.05rem; margin-bottom: 0.75rem;">
-            <i class="fab fa-telegram" style="font-size: 1.3rem;"></i> <span>Contactar por Telegram</span>
+            <i class="fab fa-telegram" style="font-size: 1.3rem;"></i> <span data-i18n="contactCardBtnTg">Contactar por Telegram</span>
           </a>
 
           <a href="https://www.facebook.com/AjuscoFix/" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 0.85rem; font-size: 0.95rem;">
-            <i class="fab fa-facebook-messenger" style="color: #0084ff;"></i> <span>Escribir por Messenger (AjuscoFix)</span>
+            <i class="fab fa-facebook-messenger" style="color: #0084ff;"></i> <span data-i18n="contactCardBtnFb">Escribir por Messenger (AjuscoFix)</span>
           </a>
 
           <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-muted); text-align: center;">
-            <i class="fas fa-lock" style="color: var(--accent-emerald);"></i> Confidencialidad y respuesta directa garantizadas
+            <i class="fas fa-lock" style="color: var(--accent-emerald);"></i> <span data-i18n="contactCardSecure">Confidencialidad y respuesta directa garantizadas</span>
           </div>
         </div>
       </div>
@@ -572,9 +573,9 @@
   <footer>
     <div class="container">
       <p style="margin-bottom: 0.5rem;">
-        © 2026 <strong>Arturo Urbina Velasco</strong> · <strong>AjuscoFix</strong>. Todos los derechos reservados.
+        © 2026 <strong>Arturo Urbina Velasco</strong> · <strong>AjuscoFix</strong>. <span data-i18n="footerRights">Todos los derechos reservados.</span>
       </p>
-      <p style="font-size: 0.8rem; color: var(--text-muted);">
+      <p style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="footerSub">
         Desarrollador de Aplicaciones Senior · Múltiples Lenguajes, Tecnologías & IA Aplicada.
       </p>
     </div>
