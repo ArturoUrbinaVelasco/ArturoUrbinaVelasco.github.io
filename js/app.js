@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initLanguage();
   renderAll();
   initVisitorCounter();
+  initVisitorToggle();
   initMobileMenu();
   setupSmoothScroll();
 });
@@ -118,6 +119,7 @@ function renderAll() {
   renderFaqs();
   initCotizador();
   renderVisitorCount();
+  updateVisitorToggleTitle();
 }
 
 /* ==============================================================================
@@ -591,4 +593,38 @@ function renderVisitorCount() {
   if (!counterEl || currentVisitorCount === null) return;
   const locale = currentLang === "en" ? "en-US" : "es-MX";
   counterEl.textContent = Number(currentVisitorCount).toLocaleString(locale);
+}
+
+function initVisitorToggle() {
+  const toggleBtn = document.getElementById("visitorToggle");
+  if (!toggleBtn) return;
+
+  toggleBtn.onclick = (e) => {
+    e.stopPropagation();
+    toggleBtn.classList.toggle("expanded");
+    updateVisitorToggleTitle();
+  };
+
+  document.addEventListener("click", (e) => {
+    if (!toggleBtn.contains(e.target) && toggleBtn.classList.contains("expanded")) {
+      toggleBtn.classList.remove("expanded");
+      updateVisitorToggleTitle();
+    }
+  });
+}
+
+function updateVisitorToggleTitle() {
+  const toggleBtn = document.getElementById("visitorToggle");
+  if (!toggleBtn) return;
+  const isExpanded = toggleBtn.classList.contains("expanded");
+  const data = getData();
+  const ui = data.ui || {};
+
+  if (isExpanded) {
+    toggleBtn.setAttribute("title", ui.visitorTitleHide || (currentLang === "en" ? "Hide visits" : "Ocultar visitas"));
+    toggleBtn.setAttribute("aria-expanded", "true");
+  } else {
+    toggleBtn.setAttribute("title", ui.visitorTitleShow || (currentLang === "en" ? "View visits" : "Ver visitas"));
+    toggleBtn.setAttribute("aria-expanded", "false");
+  }
 }

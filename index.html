@@ -579,13 +579,15 @@
         Desarrollador de Aplicaciones Senior · Múltiples Lenguajes, Tecnologías & IA Aplicada.
       </p>
 
-      <!-- Contador de Visitas Discreto -->
+      <!-- Contador ultra-discreto: solo icono, clic para mostrar/ocultar -->
       <div class="visitor-counter-wrap">
-        <div class="visitor-badge" id="visitorBadge" title="Visitas totales al portal">
+        <button class="visitor-toggle-btn" id="visitorToggle" aria-expanded="false" title="Ver visitas" aria-label="Contador de visitas">
           <i class="fas fa-chart-line visitor-icon"></i>
-          <span class="visitor-label" data-i18n="visitorLabel">Visitas:</span>
-          <span class="visitor-number" id="visitorCount">...</span>
-        </div>
+          <span class="visitor-popover" id="visitorPopover">
+            <span class="visitor-label" data-i18n="visitorLabel">Visitas:</span>
+            <span class="visitor-number" id="visitorCount">...</span>
+          </span>
+        </button>
       </div>
     </div>
   </footer>

@@ -144,7 +144,9 @@ const SITE_DATA = {
       footerRights: "Todos los derechos reservados.",
       footerSub: "Desarrollador de Aplicaciones Senior · Múltiples Lenguajes, Tecnologías & IA Aplicada.",
       visitorLabel: "Visitas:",
-      visitorTitle: "Visitas totales al portal"
+      visitorTitle: "Visitas totales al portal",
+      visitorTitleShow: "Ver estadísticas de visitas",
+      visitorTitleHide: "Ocultar estadísticas de visitas"
     },
 
     metricas: [
@@ -752,7 +754,9 @@ const SITE_DATA = {
       footerRights: "All rights reserved.",
       footerSub: "Senior Application Developer · Multi-Stack, Technologies & Applied AI.",
       visitorLabel: "Visitors:",
-      visitorTitle: "Total site visits"
+      visitorTitle: "Total site visits",
+      visitorTitleShow: "View visit statistics",
+      visitorTitleHide: "Hide visit statistics"
     },
 
     metricas: [
