@@ -50,13 +50,25 @@ El proyecto está diseñado bajo una arquitectura **Jamstack Estática Pura**, s
 
 ```
 ArturoUrbinaVelasco.github.io/
-├── index.html              # Estructura semántica HTML5, tags i18n data-i18n, accesibilidad ARIA
+├── index.html              # Estructura semántica HTML5, tags i18n, Schema.org JSON-LD, meta OG/Twitter
+├── manifest.json           # Manifiesto PWA para instalación web y accesos directos
+├── service-worker.js       # Service Worker: precaché de shell, offline fallback y stale-while-revalidate
+├── favicon.ico             # Icono de pestaña multirresolución (16, 32, 48)
 ├── css/
 │   └── styles.css          # Sistema de diseño Tech, variables CSS dark/light, responsive breakpoints
 ├── js/
 │   ├── data.js             # Capa desacoplada de contenido y traducciones (SITE_DATA.es / SITE_DATA.en)
 │   └── app.js              # Controlador reactivo: renderizado dinámico, i18n, tema, cotizador y métricas
-├── img/                    # Activos gráficos y capturas
+├── img/                    # Activos gráficos y branding PWA/OG
+│   ├── og-preview.png      # Tarjeta Open Graph optimizada 1200x630 px
+│   ├── icon-192.png        # Icono PWA estándar 192x192
+│   ├── icon-512.png        # Icono PWA alta definición 512x512
+│   ├── icon-maskable-192.png # Icono PWA adaptativo maskable 192x192
+│   ├── icon-maskable-512.png # Icono PWA adaptativo maskable 512x512
+│   ├── apple-touch-icon.png # Icono para dispositivos iOS 180x180
+│   ├── favicon-32.png      # Favicon estándar PNG 32x32
+│   └── favicon-16.png      # Favicon compacto PNG 16x16
+├── scratch/                # Scripts de automatización y suites de pruebas automatizadas
 ├── README.md               # Resumen ejecutivo para visitantes y desarrolladores
 └── AGENTS.md               # Fuente de la verdad, reglas operativas y estado técnico (este archivo)
 ```
@@ -105,6 +117,9 @@ ArturoUrbinaVelasco.github.io/
 | **Temas Oscuro / Claro** | ✅ Completado | `css/styles.css`, `js/app.js` | Alto contraste WCAG AA, transición suave y preservación de consola |
 | **Contador Discreto & Dashboard** | ✅ Completado | `index.html`, `css/styles.css`, `js/app.js` | Toggle discreto, CountAPI + enlace directo a hits.sh por día/semana/mes |
 | **Botones Flotantes (WA/TG)** | ✅ Completado | `index.html`, `css/styles.css` | Acceso rápido flotante con efecto ping en WhatsApp |
+| **SEO & Open Graph / Twitter Cards** | ✅ Completado | `index.html`, `img/og-preview.png` | Meta tags completos `og:*` y `twitter:*`, tarjeta 1200x630px para previsualización en WhatsApp/Telegram/LinkedIn |
+| **Schema.org Structured Data** | ✅ Completado | `index.html` | Marcado JSON-LD con entidades `Person`, `ProfessionalService` y `WebSite` para SEO local y profesional |
+| **PWA & Soporte Offline** | ✅ Completado | `manifest.json`, `service-worker.js`, `img/*` | Precaché de shell, offline fallback, iconos adaptativos maskable e instalación en pantalla de inicio |
 
 ---
 
@@ -112,22 +127,17 @@ ArturoUrbinaVelasco.github.io/
 
 Cualquier IA o desarrollador puede seleccionar una tarea de este backlog para continuar mejorando el portal:
 
-### 🟡 Prioridad Media / Corto Plazo
-1. **Metadatos Open Graph & Twitter Cards:**  
-   - Agregar en `<head>` de `index.html` las etiquetas `og:title`, `og:description`, `og:image`, `og:url` y `twitter:card`.
-   - Crear una imagen optimizada (1200x630 px) en `img/og-preview.png` para que al compartir el link en redes sociales, WhatsApp o Telegram aparezca una tarjeta profesional destacada.
-2. **Schema.org Structured Data (JSON-LD):**  
-   - Incorporar un bloque `<script type="application/ld+json">` con tipos `Person` y `ProfessionalService` para maximizar el posicionamiento SEO en Google en búsquedas de desarrollo de software y soporte en CDMX.
-3. **Progressive Web App (PWA):**  
-   - Generar `manifest.json` e iconos (192x192, 512x512).  
-   - Registrar un `service-worker.js` básico para permitir instalación en dispositivos móviles y funcionamiento sin conexión.
+### 🟢 Tareas Completadas Recientemente
+- [x] **SEO & Open Graph:** Etiquetas `og:*` completas, Twitter Cards y renderizado de tarjeta `img/og-preview.png` (1200x630 px).
+- [x] **Schema.org JSON-LD:** Marcado estructurado oficial con `Person`, `ProfessionalService` y catálogo de servicios de software e infraestructura.
+- [x] **Progressive Web App (PWA):** `manifest.json`, `service-worker.js` con precaché y soporte offline, junto con suite completa de iconos (192, 512, maskable, iOS y favicon).
 
-### 🟢 Prioridad Baja / Mediano Plazo
-4. **Galería / Modal de Capturas de Proyectos:**  
+### 🟡 Próximas Mejoras (Corto / Mediano Plazo)
+1. **Galería / Modal de Capturas de Proyectos:**  
    - Integrar un visor de imágenes ligero (lightbox puro o CSS-only) para ver capturas de pantalla de interfaces de proyectos sin salir de la página.
-5. **Formulario de Contacto por Correo (Fallback):**  
+2. **Formulario de Contacto por Correo (Fallback):**  
    - Integrar un endpoint ligero (ej. Formspree o EmailJS) para visitantes corporativos que prefieran enviar un mensaje formal por formulario web sin abrir su cliente de correo.
-6. **Pipeline de Pruebas Continuas (CI/CD con GitHub Actions):**  
+3. **Pipeline de Pruebas Continuas (CI/CD con GitHub Actions):**  
    - Configurar un workflow `.github/workflows/ci.yml` que valide HTML/CSS con linters y ejecute pruebas Playwright en modo headless antes de fusionar cambios en `main`.
 
 ---
@@ -142,16 +152,21 @@ python -m http.server 8000
 ```
 
 ### Opción 2: Pruebas Automatizadas con Playwright
-El proyecto cuenta con scripts de verificación visual y funcional en el entorno de pruebas:
+El proyecto cuenta con scripts de verificación visual, funcional y de estándares PWA/SEO en `scratch/`:
 ```bash
-python -m playwright install chromium
+# 1. Verificación completa de UX, temas, responsive y métricas:
 python scratch/test_portfolio_full_ux.py
+
+# 2. Verificación de SEO Open Graph, Schema.org JSON-LD, PWA y Service Worker:
+python scratch/test_backlog_features.py
 ```
 Verifica:
 - Alineación del navbar en un solo renglón en desktop.
-- Activación del menú hamburguesa en tablet (1024px).
+- Activación del menú hamburguesa en tablet (1024px) y móvil (390px).
 - Legibilidad y contraste de colores en tema claro y oscuro.
-- Funcionamiento del toggle de visitas y apertura del enlace a `hits.sh`.
+- Funcionamiento del toggle de visitas y enlace a `hits.sh`.
+- Integridad de Schema.org JSON-LD, metadatos Open Graph y Twitter Cards.
+- Existencia física de recursos precacheados por el Service Worker y validez de `manifest.json`.
 
 ---
 

@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initVisitorToggle();
   initMobileMenu();
   setupSmoothScroll();
+  registerServiceWorker();
 });
 
 function getData() {
@@ -653,5 +654,23 @@ function updateVisitorToggleTitle() {
   } else {
     toggleBtn.setAttribute("title", ui.visitorTitleShow || (currentLang === "en" ? "View visits" : "Ver visitas"));
     toggleBtn.setAttribute("aria-expanded", "false");
+  }
+}
+
+/* ==============================================================================
+   9. REGISTRO DE SERVICE WORKER (PWA & OFFLINE)
+   ============================================================================== */
+function registerServiceWorker() {
+  if ("serviceWorker" in navigator && (window.location.protocol.startsWith("http") || window.location.protocol.startsWith("https"))) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("./service-worker.js")
+        .then((registration) => {
+          // Service worker registrado correctamente
+        })
+        .catch((error) => {
+          // Silencioso en caso de fallback
+        });
+    });
   }
 }

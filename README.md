@@ -43,7 +43,13 @@
 6. **Contador de Visitas Ultra-Discreto con Dashboard:**
    - Icono minimalista en el pie de página que se expande bajo demanda.
    - Al pulsar el número de visitas, abre en una nueva pestaña el panel en vivo de `hits.sh` con métricas por día, semana, mes y mapa de calor.
-7. **Canales de Contacto Directo:**
+7. **PWA (Progressive Web App) & Modo Offline:**
+   - Instalable en dispositivos móviles y de escritorio mediante `manifest.json`.
+   - `service-worker.js` con precaché del application shell y estrategia de recarga en segundo plano (*stale-while-revalidate*).
+8. **SEO Avanzado, Schema.org y Tarjetas Sociales:**
+   - Metadatos Open Graph y Twitter Cards con previsualización gráfica optimizada de 1200x630 px (`img/og-preview.png`).
+   - Marcado estructurado JSON-LD con entidades `Person`, `ProfessionalService` y catálogo de servicios de desarrollo y soporte.
+9. **Canales de Contacto Directo:**
    - Botones flotantes con microinteracciones para WhatsApp y Telegram.
    - Enlaces a correo electrónico y página de Facebook de AjuscoFix.
 
@@ -63,13 +69,25 @@ Construido bajo la filosofía **Jamstack estática de máxima velocidad y cero c
 
 ```
 ArturoUrbinaVelasco.github.io/
-├── index.html              # Estructura principal, marcado semántico e i18n
+├── index.html              # Estructura principal, marcado semántico, Schema.org e i18n
+├── manifest.json           # Manifiesto PWA para instalación móvil/desktop y shortcuts
+├── service-worker.js       # Service worker: shell precache y fallback offline
+├── favicon.ico             # Favicon multirresolución (16, 32, 48)
 ├── css/
 │   └── styles.css          # Variables de diseño, temas claro/oscuro, media queries
 ├── js/
 │   ├── data.js             # Fuente única de datos bilingüe (SITE_DATA.es / SITE_DATA.en)
 │   └── app.js              # Controlador reactivo (tema, idioma, renderizado, cotizador)
-├── img/                    # Logotipos, iconos y activos multimedia
+├── img/                    # Activos visuales, iconos PWA y previsualizaciones
+│   ├── og-preview.png      # Tarjeta Open Graph optimizada 1200x630 px
+│   ├── icon-192.png        # Icono PWA estándar 192x192
+│   ├── icon-512.png        # Icono PWA alta definición 512x512
+│   ├── icon-maskable-192.png # Icono adaptativo Android maskable 192x192
+│   ├── icon-maskable-512.png # Icono adaptativo Android maskable 512x512
+│   ├── apple-touch-icon.png # Icono iOS 180x180
+│   ├── favicon-32.png      # Favicon 32x32
+│   └── favicon-16.png      # Favicon 16x16
+├── scratch/                # Generadores de activos y suites de pruebas automatizadas
 ├── AGENTS.md               # Fuente de la verdad, directrices y reglas para Agentes de IA
 └── README.md               # Documentación general del repositorio (este archivo)
 ```
@@ -170,7 +188,7 @@ Todo colaborador o IA que trabaje en este proyecto debe respetar las siguientes 
 
 ---
 
-## 💻 Ejecución Local
+## 💻 Ejecución Local & Pruebas Automatizadas
 
 Para levantar el portal en tu entorno local sin instalar paquetes pesados:
 
@@ -183,15 +201,25 @@ python -m http.server 8000
 # http://localhost:8000
 ```
 
+### Ejecutar Pruebas de Calidad (Playwright):
+```bash
+# 1. Pruebas de UX completa, responsividad y temas:
+python scratch/test_portfolio_full_ux.py
+
+# 2. Pruebas de SEO, Schema.org JSON-LD, PWA y Service Worker:
+python scratch/test_backlog_features.py
+```
+
 ---
 
 ## 🗺️ Hoja de Ruta (Roadmap)
 
-- [ ] **SEO & Open Graph:** Etiquetas `og:*` y Twitter Card con imagen de previsualización para WhatsApp/Telegram/LinkedIn.
-- [ ] **Schema.org JSON-LD:** Marcado estructurado de tipo `Person` y `ProfessionalService`.
-- [ ] **PWA (Progressive Web App):** Archivo `manifest.json` y `service-worker.js` para instalación en móviles.
+- [x] **SEO & Open Graph:** Etiquetas `og:*` y Twitter Card con imagen de previsualización para WhatsApp/Telegram/LinkedIn (`img/og-preview.png`).
+- [x] **Schema.org JSON-LD:** Marcado estructurado de tipo `Person`, `ProfessionalService` y `WebSite`.
+- [x] **PWA (Progressive Web App):** Archivo `manifest.json`, iconos adaptativos y `service-worker.js` para instalación y funcionamiento offline.
 - [ ] **Modal de Capturas:** Visor ligero de capturas de pantalla de proyectos.
 - [ ] **Formulario de Fallback:** Envío de correo directo para clientes que no deseen usar WhatsApp/Telegram.
+- [ ] **CI/CD con GitHub Actions:** Pipeline automatizado de linting y pruebas Playwright headless.
 
 ---
 

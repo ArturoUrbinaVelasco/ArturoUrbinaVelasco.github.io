@@ -1,0 +1,62 @@
+{
+  "name": "Arturo Urbina Velasco · Software Empresarial & IA",
+  "short_name": "Arturo Urbina",
+  "description": "Desarrollador de Aplicaciones Senior en múltiples lenguajes y tecnologías, IA On-Premise y soporte de infraestructura IT con AjuscoFix.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0f1d",
+  "theme_color": "#0284c7",
+  "lang": "es-MX",
+  "categories": ["business", "developer", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "img/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Portafolio de Proyectos",
+      "short_name": "Proyectos",
+      "description": "Ver proyectos técnicos y desarrollos de software",
+      "url": "./index.html#proyectos",
+      "icons": [{ "src": "img/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Cotizador Express",
+      "short_name": "Cotizador",
+      "description": "Calcular presupuesto y consultar por WhatsApp o Telegram",
+      "url": "./index.html#cotizador",
+      "icons": [{ "src": "img/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contacto & Soporte AjuscoFix",
+      "short_name": "Contacto",
+      "description": "Canales de contacto directo y atención en CDMX o remoto",
+      "url": "./index.html#contacto",
+      "icons": [{ "src": "img/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
