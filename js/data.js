@@ -142,7 +142,9 @@ const SITE_DATA = {
       contactCardSecure: "Confidencialidad y respuesta directa garantizadas",
 
       footerRights: "Todos los derechos reservados.",
-      footerSub: "Desarrollador de Aplicaciones Senior · Múltiples Lenguajes, Tecnologías & IA Aplicada."
+      footerSub: "Desarrollador de Aplicaciones Senior · Múltiples Lenguajes, Tecnologías & IA Aplicada.",
+      visitorLabel: "Visitas:",
+      visitorTitle: "Visitas totales al portal"
     },
 
     metricas: [
@@ -748,7 +750,9 @@ const SITE_DATA = {
       contactCardSecure: "Absolute confidentiality and direct response guaranteed",
 
       footerRights: "All rights reserved.",
-      footerSub: "Senior Application Developer · Multi-Stack, Technologies & Applied AI."
+      footerSub: "Senior Application Developer · Multi-Stack, Technologies & Applied AI.",
+      visitorLabel: "Visitors:",
+      visitorTitle: "Total site visits"
     },
 
     metricas: [

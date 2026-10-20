@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initLanguage();
   renderAll();
+  initVisitorCounter();
   initMobileMenu();
   setupSmoothScroll();
 });
@@ -116,6 +117,7 @@ function renderAll() {
   renderTrayectoria();
   renderFaqs();
   initCotizador();
+  renderVisitorCount();
 }
 
 /* ==============================================================================
@@ -543,4 +545,50 @@ function setupSmoothScroll() {
       }
     });
   });
+}
+
+/* ==============================================================================
+   11. CONTADOR DE VISITAS DISCRETO (API + FALLBACK SVG)
+   ============================================================================== */
+let currentVisitorCount = null;
+
+async function initVisitorCounter() {
+  const counterEl = document.getElementById("visitorCount");
+  if (!counterEl) return;
+
+  const key = "arturourbinavelasco-portfolio";
+  const hasVisited = sessionStorage.getItem("portfolio_visited");
+  const url = hasVisited
+    ? `https://countapi.mileshilliard.com/api/v1/get/${key}`
+    : `https://countapi.mileshilliard.com/api/v1/hit/${key}`;
+
+  try {
+    const res = await fetch(url, { mode: "cors" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    if (data && typeof data.value === "number") {
+      currentVisitorCount = data.value;
+      sessionStorage.setItem("portfolio_visited", "true");
+      localStorage.setItem("portfolio_cached_visits", String(data.value));
+      renderVisitorCount();
+    } else {
+      throw new Error("Invalid payload");
+    }
+  } catch (err) {
+    const cached = localStorage.getItem("portfolio_cached_visits");
+    if (cached) {
+      currentVisitorCount = parseInt(cached, 10);
+      renderVisitorCount();
+    } else {
+      // Fallback seguro a badge SVG de hits.sh
+      counterEl.innerHTML = `<img src="https://hits.sh/arturourbinavelasco.github.io.svg?style=flat-square&color=06b6d4&labelColor=0f172a&label=${currentLang === 'en' ? 'views' : 'visitas'}" alt="Visitas" style="vertical-align: middle; height: 16px; border-radius: 3px;">`;
+    }
+  }
+}
+
+function renderVisitorCount() {
+  const counterEl = document.getElementById("visitorCount");
+  if (!counterEl || currentVisitorCount === null) return;
+  const locale = currentLang === "en" ? "en-US" : "es-MX";
+  counterEl.textContent = Number(currentVisitorCount).toLocaleString(locale);
 }
