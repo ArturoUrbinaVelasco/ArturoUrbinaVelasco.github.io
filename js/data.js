@@ -146,7 +146,8 @@ const SITE_DATA = {
       visitorLabel: "Visitas:",
       visitorTitle: "Visitas totales al portal",
       visitorTitleShow: "Ver estadísticas de visitas",
-      visitorTitleHide: "Ocultar estadísticas de visitas"
+      visitorTitleHide: "Ocultar estadísticas de visitas",
+      visitorStatsTooltip: "Ver métricas y estadísticas detalladas por día, semana y mes"
     },
 
     metricas: [
@@ -756,7 +757,8 @@ const SITE_DATA = {
       visitorLabel: "Visitors:",
       visitorTitle: "Total site visits",
       visitorTitleShow: "View visit statistics",
-      visitorTitleHide: "Hide visit statistics"
+      visitorTitleHide: "Hide visit statistics",
+      visitorStatsTooltip: "View detailed metrics and statistics by day, week, and month"
     },
 
     metricas: [

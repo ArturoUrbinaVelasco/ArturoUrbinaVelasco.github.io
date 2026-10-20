@@ -564,6 +564,12 @@ async function initVisitorCounter() {
     ? `https://countapi.mileshilliard.com/api/v1/get/${key}`
     : `https://countapi.mileshilliard.com/api/v1/hit/${key}`;
 
+  // Sincronizar silenciosamente con hits.sh para registrar la métrica por día/semana/mes en su panel de analíticas
+  try {
+    const hitsTracker = new Image();
+    hitsTracker.src = `https://hits.sh/arturourbinavelasco.github.io.svg?t=${Date.now()}`;
+  } catch (e) {}
+
   try {
     const res = await fetch(url, { mode: "cors" });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -593,16 +599,37 @@ function renderVisitorCount() {
   if (!counterEl || currentVisitorCount === null) return;
   const locale = currentLang === "en" ? "en-US" : "es-MX";
   counterEl.textContent = Number(currentVisitorCount).toLocaleString(locale);
+  const data = getData();
+  const tooltip = (data.ui && data.ui.visitorStatsTooltip) 
+    || (currentLang === "en" ? "View detailed metrics (day, week, month)" : "Ver estadísticas detalladas por día, semana y mes");
+  counterEl.setAttribute("title", tooltip);
 }
 
 function initVisitorToggle() {
   const toggleBtn = document.getElementById("visitorToggle");
+  const countLink = document.getElementById("visitorCount");
   if (!toggleBtn) return;
+
+  // Clic en el número abre estadísticas detalladas en hits.sh sin colapsar el popover
+  if (countLink) {
+    countLink.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+  }
 
   toggleBtn.onclick = (e) => {
     e.stopPropagation();
     toggleBtn.classList.toggle("expanded");
     updateVisitorToggleTitle();
+  };
+
+  // Accesibilidad mediante teclado
+  toggleBtn.onkeydown = (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleBtn.classList.toggle("expanded");
+      updateVisitorToggleTitle();
+    }
   };
 
   document.addEventListener("click", (e) => {

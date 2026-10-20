@@ -57,12 +57,12 @@
           <i class="fas fa-sun"></i>
         </button>
 
-        <a href="https://wa.me/525559694250?text=Hola%20Arturo,%20me%20comunico%20desde%20tu%20portal%20profesional" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 0.5rem 0.85rem; font-size: 0.85rem;" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i> <span class="hide-mobile">WhatsApp</span>
+        <a href="https://wa.me/525559694250?text=Hola%20Arturo,%20me%20comunico%20desde%20tu%20portal%20profesional" target="_blank" rel="noopener" class="nav-icon-btn nav-wa-btn" title="Contactar por WhatsApp" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
         </a>
 
-        <a href="https://t.me/+525559694250" target="_blank" rel="noopener" class="btn btn-telegram" style="padding: 0.5rem 0.85rem; font-size: 0.85rem;" title="Telegram">
-          <i class="fab fa-telegram"></i> <span class="hide-mobile">Telegram</span>
+        <a href="https://t.me/+525559694250" target="_blank" rel="noopener" class="nav-icon-btn nav-tg-btn" title="Contactar por Telegram" aria-label="Telegram">
+          <i class="fab fa-telegram"></i>
         </a>
 
         <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
@@ -194,7 +194,7 @@
   <!-- ==============================================================================
        COMPETENCIAS CLAVE & STACK TÉCNICO
        ============================================================================== -->
-  <section class="section" id="competencias" style="background: rgba(0, 0, 0, 0.1);">
+  <section class="section section-alt" id="competencias">
     <div class="container">
       <div class="section-header">
         <div class="badge section-tag"><i class="fas fa-cubes"></i> <span data-i18n="competenciasTag">Dominio Tecnológico</span></div>
@@ -251,7 +251,7 @@
   <!-- ==============================================================================
        CATÁLOGO DE SERVICIOS
        ============================================================================== -->
-  <section class="section" id="servicios" style="background: rgba(0, 0, 0, 0.15);">
+  <section class="section section-alt" id="servicios">
     <div class="container">
       <div class="section-header">
         <div class="badge section-tag"><i class="fas fa-cogs"></i> <span data-i18n="serviciosTag">Soluciones Especializadas</span></div>
@@ -449,7 +449,7 @@
   <!-- ==============================================================================
        PREGUNTAS FRECUENTES (FAQ)
        ============================================================================== -->
-  <section class="section" id="faq" style="background: rgba(0, 0, 0, 0.15);">
+  <section class="section section-alt" id="faq">
     <div class="container">
       <div class="section-header">
         <div class="badge section-tag"><i class="fas fa-question-circle"></i> <span data-i18n="faqTag">Dudas Comunes</span></div>
@@ -529,7 +529,7 @@
         </div>
 
         <!-- Tarjeta de Acción Rápida -->
-        <div style="display: flex; flex-direction: column; justify-content: center; background: rgba(0, 0, 0, 0.2); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+        <div class="contact-action-card">
           <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;" data-i18n="contactCardTitle">¿Tienes un requerimiento técnico o proyecto?</h3>
           <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: 1.5rem;" data-i18n="contactCardDesc">
             Escríbeme directamente por WhatsApp o Telegram para coordinar una llamada de diagnóstico o propuesta técnica:
@@ -547,7 +547,7 @@
             <i class="fab fa-facebook-messenger" style="color: #0084ff;"></i> <span data-i18n="contactCardBtnFb">Escribir por Messenger (AjuscoFix)</span>
           </a>
 
-          <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-muted); text-align: center;">
+          <div class="contact-secure-note">
             <i class="fas fa-lock" style="color: var(--accent-emerald);"></i> <span data-i18n="contactCardSecure">Confidencialidad y respuesta directa garantizadas</span>
           </div>
         </div>
@@ -579,15 +579,15 @@
         Desarrollador de Aplicaciones Senior · Múltiples Lenguajes, Tecnologías & IA Aplicada.
       </p>
 
-      <!-- Contador ultra-discreto: solo icono, clic para mostrar/ocultar -->
+      <!-- Contador ultra-discreto: solo icono, clic para alternar -->
       <div class="visitor-counter-wrap">
-        <button class="visitor-toggle-btn" id="visitorToggle" aria-expanded="false" title="Ver visitas" aria-label="Contador de visitas">
+        <div class="visitor-toggle-btn" id="visitorToggle" role="button" tabindex="0" aria-expanded="false" title="Ver visitas" aria-label="Contador de visitas">
           <i class="fas fa-chart-line visitor-icon"></i>
           <span class="visitor-popover" id="visitorPopover">
             <span class="visitor-label" data-i18n="visitorLabel">Visitas:</span>
-            <span class="visitor-number" id="visitorCount">...</span>
+            <a href="https://hits.sh/arturourbinavelasco.github.io/" target="_blank" rel="noopener noreferrer" class="visitor-number" id="visitorCount" title="Ver estadísticas detalladas por día, semana y mes">...</a>
           </span>
-        </button>
+        </div>
       </div>
     </div>
   </footer>
