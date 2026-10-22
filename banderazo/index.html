@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banderazo · Taxímetro Digital Satelital Profesional CDMX</title>
+  <meta name="description" content="Taxímetro digital profesional para Android. Medición satelital GPS 100% offline, cero anuncios, tarifas personalizables, ergonomía visual con dígitos ajustables y comprobante WhatsApp.">
+  <meta name="keywords" content="taxímetro digital, taxímetro cdmx, taximetro gps, taximetro android, tarifa taxi cdmx, taximetro profesional">
+  <meta name="author" content="Arturo Urbina Velasco">
+  <meta name="theme-color" content="#070B14">
+
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Banderazo · Taxímetro Digital Satelital Profesional">
+  <meta property="og:description" content="El taxímetro Android definitivo para taxistas profesionales. GPS offline, cero anuncios, tarifas personalizadas y comprobante por WhatsApp.">
+  <meta property="og:image" content="img/01_taximetro_principal_libre.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       HEADER & NAVBAR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#inicio" class="brand" aria-label="Banderazo Inicio">
+          <div class="brand-badge">B</div>
+          <div class="brand-text">
+            <h1>Banderazo</h1>
+            <span data-i18n="brand_subtitle">Taxímetro Digital Satelital</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#caracteristicas" data-i18n="nav_features">Características</a></li>
+          <li><a href="#pantallas" data-i18n="nav_screens">Pantallas</a></li>
+          <li><a href="#comparativa" data-i18n="nav_comparison">Comparativa</a></li>
+          <li><a href="#cotizador" data-i18n="nav_calculator">Cotizador</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Preguntas</a></li>
+          <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="btn-icon" aria-label="Cambiar tema claro/oscuro" title="Tema">
+            <span class="theme-icon">🌙</span>
+          </button>
+          <button id="langToggle" class="btn-icon lang-btn" aria-label="Cambiar idioma" title="Language">
+            EN
+          </button>
+          <a href="https://wa.me/525559694250?text=Hola,%20quiero%20probar%20Banderazo%20Tax%C3%ADmetro%20Digital" target="_blank" rel="noopener noreferrer" class="btn-cta-nav">
+            <span>⚡</span>
+            <span data-i18n="nav_cta">Prueba 5 Días Gratis</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span>🛡️</span>
+            <span data-i18n="hero_badge">100% Profesional · Cero Anuncios</span>
+          </div>
+          <h1>
+            <span data-i18n="hero_title_1">El Taxímetro Digital</span><br>
+            <span class="highlight" data-i18n="hero_title_2">Preciso, Confiable y Satelital</span>
+          </h1>
+          <p class="hero-desc" data-i18n="hero_desc">
+            Diseñado especialmente para operadores de taxi. Olvídate de aplicaciones llenas de publicidad invasiva que consumen tus datos y se traban a medio viaje. Banderazo mide con satélites GPS en tiempo real con total transparencia para ti y tu pasajero.
+          </p>
+
+          <div class="hero-chips">
+            <div class="chip"><span>🛰️</span> <span data-i18n="chip_offline">100% Offline (Sin datos)</span></div>
+            <div class="chip"><span>🚫</span> <span data-i18n="chip_no_ads">Sin publicidad ni videos</span></div>
+            <div class="chip"><span>👁️</span> <span data-i18n="chip_font">Dígitos ajustables hasta 160%</span></div>
+            <div class="chip"><span>🧾</span> <span data-i18n="chip_ticket">Comprobante WhatsApp</span></div>
+            <div class="chip"><span>⚙️</span> <span data-i18n="chip_custom">Tarifas personalizadas</span></div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/525559694250?text=Hola,%20deseo%20activar%20mi%20prueba%20gratuita%20de%20Banderazo%20Tax%C3%ADmetro" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <span>📲</span>
+              <span data-i18n="hero_cta_primary">Solicitar Prueba Gratuita</span>
+            </a>
+            <a href="#pantallas" class="btn-secondary">
+              <span>📱</span>
+              <span data-i18n="hero_cta_secondary">Ver Pantallas de la App</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-mockup-frame">
+            <div class="phone-notch"></div>
+            <img src="img/01_taximetro_principal_libre.png" alt="Pantalla Principal Banderazo Taxi Libre" id="heroPhoneImg" loading="eager">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SHOWCASE INTERACTIVO DE PANTALLAS
+       ======================================================================== -->
+  <section class="showcase-section" id="pantallas">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="showcase_tag">Recorrido Visual</span>
+        <h2 data-i18n="showcase_title">Explora Banderazo por Dentro</h2>
+        <p data-i18n="showcase_desc">Toca cada módulo para ver capturas reales tomadas directamente de la aplicación en funcionamiento.</p>
+      </div>
+
+      <div class="showcase-layout">
+        <div class="showcase-tabs">
+          <!-- Tab 1 -->
+          <div class="showcase-tab active" data-img="img/01_taximetro_principal_libre.png">
+            <div class="tab-icon">🚖</div>
+            <div class="tab-info">
+              <h3 data-i18n="tab_1_title">Taxímetro Principal en Tiempo Real</h3>
+              <p data-i18n="tab_1_desc">Dígitos enormes de alta legibilidad, indicador satelital GPS en vivo, distancia recorrida y tiempo detenido.</p>
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div class="showcase-tab" data-img="img/07_apariencia_fuentes_ergonomia.png">
+            <div class="tab-icon">👁️</div>
+            <div class="tab-info">
+              <h3 data-i18n="tab_2_title">Ergonomía Visual & Tamaño de Fuente</h3>
+              <p data-i18n="tab_2_desc">Ajusta el tamaño del texto hasta un 160% para ver la tarifa sin forzar la vista y que tu pasajero viaje tranquilo.</p>
+            </div>
+          </div>
+
+          <!-- Tab 3 -->
+          <div class="showcase-tab" data-img="img/09_editor_tarifa_personalizada.png">
+            <div class="tab-icon">⚙️</div>
+            <div class="tab-info">
+              <h3 data-i18n="tab_3_title">Tarifas Oficiales y Personalizadas</h3>
+              <p data-i18n="tab_3_desc">Libre, Sitio y Radio Taxi CDMX precargadas. Crea tus propias tarifas por zona, foráneas, nocturnas o de sitio privado.</p>
+            </div>
+          </div>
+
+          <!-- Tab 4 -->
+          <div class="showcase-tab" data-img="img/02_cotizador_viajes.png">
+            <div class="tab-icon">🧮</div>
+            <div class="tab-info">
+              <h3 data-i18n="tab_4_title">Cotizador Rápido de Viajes</h3>
+              <p data-i18n="tab_4_desc">Calcula en segundos el costo exacto antes de arrancar. Ideal para convenios, presupuestos o viajes foráneos.</p>
+            </div>
+          </div>
+
+          <!-- Tab 5 -->
+          <div class="showcase-tab" data-img="img/05_comprobante_digital_viaje.png">
+            <div class="tab-icon">🧾</div>
+            <div class="tab-info">
+              <h3 data-i18n="tab_5_title">Ticket Digital para WhatsApp</h3>
+              <p data-i18n="tab_5_desc">Genera un comprobante profesional con tu logo, placas, desglose y mapa para enviarlo al pasajero en un toque.</p>
+            </div>
+          </div>
+
+          <!-- Tab 6 -->
+          <div class="showcase-tab" data-img="img/04_estadisticas_ganancias.png">
+            <div class="tab-icon">📊</div>
+            <div class="tab-info">
+              <h3 data-i18n="tab_6_title">Estadísticas e Historial de Ganancias</h3>
+              <p data-i18n="tab_6_desc">Monitorea tus ingresos diarios y semanales, kilómetros productivos, cobros promedio y desglose completo.</p>
+            </div>
+          </div>
+
+          <!-- Tab 7 -->
+          <div class="showcase-tab" data-img="img/10_respaldo_completo_vs_config.png">
+            <div class="tab-icon">💾</div>
+            <div class="tab-info">
+              <h3 data-i18n="tab_7_title">Respaldos y Seguridad con PIN</h3>
+              <p data-i18n="tab_7_desc">Exporta tu configuración o viajes completos. Protege tus tarifas con código PIN para evitar alteraciones.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase-preview">
+          <div class="showcase-phone">
+            <img src="img/01_taximetro_principal_libre.png" id="showcaseImg" alt="Captura de Banderazo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       COMPARATIVA DE VALOR
+       ======================================================================== -->
+  <section class="comparison-section" id="comparativa">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="comp_tag">Ventajas Reales</span>
+        <h2 data-i18n="comp_title">¿Por qué Elegir Banderazo?</h2>
+        <p data-i18n="comp_desc">Una herramienta de trabajo profesional frente a las aplicaciones genéricas llenas de publicidad.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th data-i18n="th_feature">Característica</th>
+              <th class="col-highlight" data-i18n="th_banderazo">Banderazo Taxímetro</th>
+              <th data-i18n="th_others">Apps Genéricas Gratuitas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="row_1_name"><strong>Publicidad y comerciales</strong></td>
+              <td class="col-highlight"><span class="check-badge">✓</span> <span data-i18n="row_1_banderazo">Cero anuncios. Pantalla 100% limpia para trabajar.</span></td>
+              <td><span class="cross-badge">✗</span> <span data-i18n="row_1_others">Videos con sonido y banners invasivos a mitad de viaje.</span></td>
+            </tr>
+            <tr>
+              <td data-i18n="row_2_name"><strong>Conexión a Internet y datos móviles</strong></td>
+              <td class="col-highlight"><span class="check-badge">✓</span> <span data-i18n="row_2_banderazo">100% Satelital GPS offline. No gasta tus megas.</span></td>
+              <td><span class="cross-badge">✗</span> <span data-i18n="row_2_others">Requiere internet obligatorio para cargar publicidad.</span></td>
+            </tr>
+            <tr>
+              <td data-i18n="row_3_name"><strong>Ergonomía visual y tamaño de texto</strong></td>
+              <td class="col-highlight"><span class="check-badge">✓</span> <span data-i18n="row_3_banderazo">Ajustable hasta 160%. Lectura clara para chofer y cliente.</span></td>
+              <td><span class="cross-badge">✗</span> <span data-i18n="row_3_others">Tamaño fijo pequeño difícil de leer bajo el sol.</span></td>
+            </tr>
+            <tr>
+              <td data-i18n="row_4_name"><strong>Edición y creación de tarifas</strong></td>
+              <td class="col-highlight"><span class="check-badge">✓</span> <span data-i18n="row_4_banderazo">Oficiales CDMX + tarifas personalizadas ilimitadas.</span></td>
+              <td><span class="cross-badge">✗</span> <span data-i18n="row_4_others">Tarifas rígidas o bloqueadas sin poder ajustarlas.</span></td>
+            </tr>
+            <tr>
+              <td data-i18n="row_5_name"><strong>Comprobante digital para el cliente</strong></td>
+              <td class="col-highlight"><span class="check-badge">✓</span> <span data-i18n="row_5_banderazo">Ticket con tu logo e identidad listo para WhatsApp.</span></td>
+              <td><span class="cross-badge">✗</span> <span data-i18n="row_5_others">Sin comprobante o con marca de agua publicitaria.</span></td>
+            </tr>
+            <tr>
+              <td data-i18n="row_6_name"><strong>Protección con PIN de seguridad</strong></td>
+              <td class="col-highlight"><span class="check-badge">✓</span> <span data-i18n="row_6_banderazo">PIN para evitar cambios no autorizados en tarifas.</span></td>
+              <td><span class="cross-badge">✗</span> <span data-i18n="row_6_others">Cualquiera puede desconfigurar la aplicación.</span></td>
+            </tr>
+            <tr>
+              <td data-i18n="row_7_name"><strong>Soporte técnico directo en español</strong></td>
+              <td class="col-highlight"><span class="check-badge">✓</span> <span data-i18n="row_7_banderazo">Atención personalizada por WhatsApp y teléfono.</span></td>
+              <td><span class="cross-badge">✗</span> <span data-i18n="row_7_others">Desarrolladores extranjeros sin respuesta ni soporte.</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       BENTO GRID DE CARACTERÍSTICAS
+       ======================================================================== -->
+  <section class="features-section" id="caracteristicas">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="bento_tag">Funcionalidades</span>
+        <h2 data-i18n="bento_title">Todo lo que Necesitas en Ruta</h2>
+        <p data-i18n="bento_desc">Herramientas pensadas por y para conductores profesionales.</p>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card wide">
+          <div>
+            <div class="bento-icon">🛰️</div>
+            <h3 data-i18n="card_1_title">Motor GPS Satelital de Alta Precisión</h3>
+            <p data-i18n="card_1_desc">Algoritmo calibrado para medir simultáneamente la distancia avanzada y el tiempo detenido en semáforos o tráfico pesado, con cálculo instantáneo por saltos de tarifa según el reglamento oficial.</p>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div>
+            <div class="bento-icon">🛡️</div>
+            <h3 data-i18n="card_2_title">PIN de Bloqueo</h3>
+            <p data-i18n="card_2_desc">Configura una clave de 4 dígitos para que sólo tú puedas editar tarifas o modificar parámetros clave del taxímetro.</p>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div>
+            <div class="bento-icon">🎨</div>
+            <h3 data-i18n="card_3_title">Identidad & Logo Propio</h3>
+            <p data-i18n="card_3_desc">Personaliza el nombre de tu sitio, base o unidad y sube tu propio logo para que aparezca en el encabezado de los comprobantes.</p>
+          </div>
+        </div>
+
+        <div class="bento-card wide">
+          <div>
+            <div class="bento-icon">📊</div>
+            <h3 data-i18n="card_4_title">Historial Completo con Traza GPS</h3>
+            <p data-i18n="card_4_desc">Cada viaje guarda hora de inicio, fin, tarifa aplicada, distancia exacta, tiempo detenido e importe final. Revisa tu jornada en cualquier momento y compártela si requieres una aclaración con el usuario.</p>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div>
+            <div class="bento-icon">💾</div>
+            <h3 data-i18n="card_5_title">Respaldos Flexibles</h3>
+            <p data-i18n="card_5_desc">Elige entre respaldo completo (viajes + configuración) o únicamente tus tarifas y ajustes para migrar fácilmente a otro teléfono.</p>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div>
+            <div class="bento-icon">🔋</div>
+            <h3 data-i18n="card_6_title">Consumo de Batería Optimizado</h3>
+            <p data-i18n="card_6_desc">Diseñado para operar jornadas completas de 12 horas continuas con mínimo calentamiento y eficiente gestión de pantalla.</p>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div>
+            <div class="bento-icon">🌙</div>
+            <h3 data-i18n="card_7_title">Modo Nocturno de Alto Contraste</h3>
+            <p data-i18n="card_7_desc">Paleta oscura profunda para no encandilar tu vista durante la noche ni incomodar a los pasajeros en el habitáculo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       COTIZADOR INTERACTIVO
+       ======================================================================== -->
+  <section class="cotizador-section" id="cotizador">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="calc_tag">Simulador en Vivo</span>
+        <h2 data-i18n="calc_title">Calculadora de Tarifas Oficiales</h2>
+        <p data-i18n="calc_desc">Prueba cómo calcula Banderazo en base a los parámetros oficiales de la CDMX.</p>
+      </div>
+
+      <div class="cotizador-box">
+        <div class="cotizador-inputs">
+          <div class="control-group">
+            <label class="control-label">
+              <span data-i18n="calc_type">Tipo de Taxi:</span>
+            </label>
+            <div class="toggle-group" id="tariffTypeGroup">
+              <button type="button" class="toggle-btn active" data-type="libre" data-i18n="calc_libre">Taxi Libre</button>
+              <button type="button" class="toggle-btn" data-type="sitio" data-i18n="calc_sitio">Taxi de Sitio</button>
+              <button type="button" class="toggle-btn" data-type="radio" data-i18n="calc_radio">Radio Taxi</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="control-label">
+              <span data-i18n="calc_distance">Distancia del viaje:</span>
+              <span class="val" id="kmValue">5.0 km</span>
+            </div>
+            <input type="range" min="0.5" max="35" step="0.5" value="5.0" class="slider-input" id="kmSlider">
+          </div>
+
+          <div class="control-group">
+            <div class="control-label">
+              <span data-i18n="calc_time">Tiempo de espera / tráfico:</span>
+              <span class="val" id="timeValue">10 min</span>
+            </div>
+            <input type="range" min="0" max="60" step="1" value="10" class="slider-input" id="timeSlider">
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">
+              <span data-i18n="calc_schedule">Horario:</span>
+            </label>
+            <div class="toggle-group" id="scheduleGroup">
+              <button type="button" class="toggle-btn active" data-schedule="diurno" data-i18n="calc_day">☀️ Diurno (05:00 - 22:00)</button>
+              <button type="button" class="toggle-btn" data-schedule="nocturno" data-i18n="calc_night">🌙 Nocturno (+20%)</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cotizador-result">
+          <span class="result-tag" data-i18n="calc_estimated">Estimado de Cobro</span>
+          <div class="result-price" id="calcPrice">$46.80</div>
+          <div class="result-breakdown" id="calcBreakdown">
+            Banderazo: $8.74 + 20 brincos de distancia + 13 brincos de tiempo
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PREGUNTAS FRECUENTES (FAQ)
+       ======================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="faq_tag">Resolución de Dudas</span>
+        <h2 data-i18n="faq_title">Preguntas Frecuentes</h2>
+        <p data-i18n="faq_desc">Respuestas claras sobre la instalación, funcionamiento y licencias de Banderazo.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q1">¿Necesito tener saldo o internet activo para que funcione?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a1">No. Banderazo funciona al 100% de manera satelital a través del chip GPS de tu teléfono Android. Puedes usarlo en modo avión o sin chip SIM y medirá la distancia y tiempo con exactitud total.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q2">¿Puedo modificar las tarifas si trabajo en el Estado de México o en un sitio foráneo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a2">Sí. Además de incluir las tarifas oficiales de la CDMX (Libre, Sitio y Radio Taxi), Banderazo cuenta con un editor completo donde puedes crear tus propias tarifas: fijar el banderazo que desees, el costo por brinco, los metros por salto y los segundos de espera.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q3">¿Por qué Banderazo no tiene anuncios como otras aplicaciones?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a3">Porque es una herramienta de trabajo profesional. En ruta no puedes arriesgarte a que un video comercial con sonido tape la pantalla o distraiga tu conducción cuando un pasajero va a bordo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q4">¿En qué teléfonos se puede instalar?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a4">En cualquier smartphone o tableta con sistema operativo Android 8.0 en adelante que cuente con sensor GPS integrado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q5">¿Cómo se activa la licencia después de la prueba de 5 días?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a5">Muy fácil. Nos mandas un mensaje por WhatsApp con el código de tu teléfono y realizas una transferencia bancaria rápida. Te enviamos tu código de activación al instante sin trámites complicados.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q6">¿Puedo cambiar de teléfono después sin perder mi información?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_a6">Por supuesto. Banderazo incluye una función de respaldo que guarda tus tarifas e historial en un archivo para que puedas restaurarlo en tu nuevo dispositivo sin empezar de cero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CTA FINAL Y CONTACTO
+       ======================================================================== -->
+  <section class="cta-section" id="contacto">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 data-i18n="cta_title">Empieza a Rodar con Banderazo Hoy Mismo</h2>
+        <p data-i18n="cta_desc">Instala la aplicación en tu teléfono Android, pruébala gratis durante 5 días en tus jornadas reales y comprueba la diferencia de trabajar con una herramienta profesional.</p>
+        
+        <a href="https://wa.me/525559694250?text=Hola,%20quiero%20descargar%20Banderazo%20para%20probarlo" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 17px; padding: 16px 32px;">
+          <span>💬</span>
+          <span data-i18n="cta_btn">Escríbenos por WhatsApp</span>
+        </a>
+
+        <div class="contact-cards">
+          <a href="https://wa.me/525559694250" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span>📱</span>
+            <span>WhatsApp: 55 5969 4250</span>
+          </a>
+          <a href="mailto:arturo.urbina.velasco@gmail.com" class="contact-card">
+            <span>✉️</span>
+            <span>arturo.urbina.velasco@gmail.com</span>
+          </a>
+          <a href="https://t.me/arturourbina" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span>✈️</span>
+            <span>Telegram: @arturourbina</span>
+          </a>
+          <a href="https://arturourbinavelasco.github.io/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span>🌐</span>
+            <span data-i18n="contact_portfolio">Portafolio del Desarrollador</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#inicio" data-i18n="nav_home">Inicio</a>
+        <a href="#caracteristicas" data-i18n="nav_features">Características</a>
+        <a href="#pantallas" data-i18n="nav_screens">Pantallas</a>
+        <a href="#comparativa" data-i18n="nav_comparison">Comparativa</a>
+        <a href="#cotizador" data-i18n="nav_calculator">Cotizador</a>
+        <a href="#faq" data-i18n="nav_faq">Preguntas</a>
+        <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+      </div>
+      <p data-i18n="footer_rights">© 2026 Banderazo · Desarrollado por Arturo Urbina Velasco. Todos los derechos reservados.</p>
+      <p style="margin-top: 6px; font-size: 12px; opacity: 0.7;" data-i18n="footer_legal">Banderazo es una herramienta de cálculo y gestión digital para operadores de taxi. Las marcas y referencias a tarifas oficiales corresponden a la normativa de la CDMX.</p>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/525559694250?text=Hola,%20me%20interesa%20informaci%C3%B3n%20sobre%20Banderazo%20Tax%C3%ADmetro" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Contacto por WhatsApp" title="Chatea por WhatsApp">
+    💬
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
