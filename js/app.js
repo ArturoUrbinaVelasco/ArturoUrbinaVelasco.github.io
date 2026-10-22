@@ -264,8 +264,8 @@ function renderProjects() {
 
       <div class="project-footer">
         <span style="font-size: 0.8rem; color: var(--text-muted); font-family: monospace;">${p.categoria}</span>
-        <a href="${p.enlace}" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.825rem;">
-          ${p.enlaceTexto} <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+        <a href="${p.enlace}" target="_blank" rel="noopener" class="btn ${p.enlace.includes('wa.me') ? 'btn-whatsapp' : 'btn-secondary'}" style="padding: 0.4rem 0.9rem; font-size: 0.825rem; white-space: nowrap;">
+          <i class="${p.enlaceIcono || (p.enlace.includes('wa.me') ? 'fab fa-whatsapp' : (p.enlace.includes('github.com') ? 'fab fa-github' : 'fas fa-external-link-alt'))}"></i> ${p.enlaceTexto}
         </a>
       </div>
     </div>

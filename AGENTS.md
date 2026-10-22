@@ -41,6 +41,10 @@ Al redactar o modificar textos en `js/data.js`, `index.html` o cualquier compone
    - En el cotizador interactivo, el nivel de prioridad/urgencia opera como un porcentaje de incremento sobre el subtotal (+0% Estándar, +25% Prioritaria, +50% Crítica/Inmediata).
 6. **Canales de Comunicación Paritarios:**  
    - Todo llamado a la acción debe ofrecer **WhatsApp (+52 55 5969 4250)** y **Telegram (@+525559694250)** con la misma visibilidad, complementado por **Messenger de AjuscoFix** y correo electrónico.
+7. **Política de Enlaces de Proyectos (Públicos vs. Privados):**  
+   - **Proyectos Públicos Open Source (ej. Android Mirror Hub):** Enlazan a su repositorio oficial en GitHub con icono de GitHub.
+   - **Banderazo (App Satelital):** Código de cliente cerrado/privado, pero con portal web dedicado oficial; enlaza a [https://arturourbinavelasco.github.io/banderazo/](https://arturourbinavelasco.github.io/banderazo/).
+   - **Proyectos Privados / On-Premise / Confidenciales (RAG Documental Salud, HUB Corporativo SSO, ERP Retail, Interoperabilidad Clínica):** **NUNCA** enlazar a GitHub (evitar 404 o confusión con repositorios que no son públicos). Enlazar directamente a consulta vía WhatsApp (`https://wa.me/...`) con mensaje contextualizado prellenado.
 
 ---
 

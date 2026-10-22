@@ -478,8 +478,9 @@ const SITE_DATA = {
           "Prototipos de agentes conversacionales para RRHH con validación humana en cada decisión",
           "Integración prototipada con canales de mensajería (WhatsApp, Telegram, Teams, SAP)"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco",
-        enlaceTexto: "Ver Perfil en GitHub",
+        enlace: "https://wa.me/525559694250?text=Hola%20Arturo,%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20detalles%20sobre%20tu%20Infraestructura%20RAG%20Documental%20y%20Asistente%20Multiagente",
+        enlaceTexto: "Consultar por WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-brain"
       },
       {
@@ -494,8 +495,9 @@ const SITE_DATA = {
           "Unificación de bases de datos por dominios con migraciones versionadas (Flyway)",
           "Orquestador de módulos web y módulos-agente de IA bajo dominio único con Traefik"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco",
-        enlaceTexto: "Ver en GitHub",
+        enlace: "https://wa.me/525559694250?text=Hola%20Arturo,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20el%20HUB%20Corporativo%20SSO%20y%20Orquestador",
+        enlaceTexto: "Consultar por WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-cubes"
       },
       {
@@ -510,8 +512,9 @@ const SITE_DATA = {
           "Tarifas oficiales CDMX precargadas y 100% configurables por el usuario",
           "Generador instantáneo de comprobantes y tickets desglosados para mensajería"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco/banderazo",
-        enlaceTexto: "Repositorio Banderazo",
+        enlace: "https://arturourbinavelasco.github.io/banderazo/",
+        enlaceTexto: "Ver Sitio de Banderazo",
+        enlaceIcono: "fas fa-external-link-alt",
         icono: "fas fa-taxi"
       },
       {
@@ -528,7 +531,8 @@ const SITE_DATA = {
           "Arquitectura limpia desacoplada (ADB/Scrcpy services), empaquetado Docker y suite de pruebas unitarias automatizadas"
         ],
         enlace: "https://github.com/ArturoUrbinaVelasco/android-mirror-hub",
-        enlaceTexto: "Repositorio Android Mirror Hub",
+        enlaceTexto: "Ver en GitHub",
+        enlaceIcono: "fab fa-github",
         icono: "fas fa-mobile-screen-button"
       },
       {
@@ -544,7 +548,8 @@ const SITE_DATA = {
           "Capacitación presencial al personal médico, técnico y administrativo"
         ],
         enlace: "https://wa.me/525559694250?text=Hola%20Arturo,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20tus%20soluciones%20de%20interoperabilidad%20m%C3%A9dica",
-        enlaceTexto: "Consultar Solución",
+        enlaceTexto: "Consultar por WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-notes-medical"
       },
       {
@@ -559,8 +564,9 @@ const SITE_DATA = {
           "Aplicaciones de apoyo para eventos masivos y expos comerciales",
           "Capacitación de personal y alta disponibilidad operativa"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco",
-        enlaceTexto: "Trayectoria en GitHub",
+        enlace: "https://wa.me/525559694250?text=Hola%20Arturo,%20me%20gustar%C3%ADa%20consultar%20sobre%20tu%20experiencia%20en%20ERP%20y%20POS%20bancario",
+        enlaceTexto: "Consultar por WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-cash-register"
       },
       {
@@ -577,6 +583,7 @@ const SITE_DATA = {
         ],
         enlace: "https://www.facebook.com/AjuscoFix/",
         enlaceTexto: "Página AjuscoFix",
+        enlaceIcono: "fab fa-facebook",
         icono: "fab fa-facebook"
       }
     ],
@@ -1110,8 +1117,9 @@ const SITE_DATA = {
           "Conversational HR prototype agents with mandatory human-in-the-loop approval",
           "Prototyped integrations with enterprise channels (WhatsApp, Telegram, Teams, SAP)"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco",
-        enlaceTexto: "View Profile on GitHub",
+        enlace: "https://wa.me/525559694250?text=Hello%20Arturo,%20I'm%20interested%20in%20learning%20more%20about%20your%20private%20RAG%20and%20AI%20agents%20infrastructure",
+        enlaceTexto: "Inquire via WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-brain"
       },
       {
@@ -1126,8 +1134,9 @@ const SITE_DATA = {
           "Domain-driven database consolidation versioned via Flyway code migrations",
           "Unified orchestrator for web and AI agent modules under a single domain with Traefik"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco",
-        enlaceTexto: "View on GitHub",
+        enlace: "https://wa.me/525559694250?text=Hello%20Arturo,%20I'd%20like%20more%20details%20about%20the%20Corporate%20SSO%20HUB",
+        enlaceTexto: "Inquire via WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-cubes"
       },
       {
@@ -1142,8 +1151,9 @@ const SITE_DATA = {
           "Official preloaded CDMX municipal rates with full user customization",
           "Instant receipt and itemized fare ticket generator ready for messaging"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco/banderazo",
-        enlaceTexto: "Banderazo Repository",
+        enlace: "https://arturourbinavelasco.github.io/banderazo/",
+        enlaceTexto: "Visit Banderazo Site",
+        enlaceIcono: "fas fa-external-link-alt",
         icono: "fas fa-taxi"
       },
       {
@@ -1160,7 +1170,8 @@ const SITE_DATA = {
           "Clean Architecture with decoupled ADB/Scrcpy services, multi-stage Dockerfile, and automated unittest suites"
         ],
         enlace: "https://github.com/ArturoUrbinaVelasco/android-mirror-hub",
-        enlaceTexto: "Android Mirror Hub Repository",
+        enlaceTexto: "View on GitHub",
+        enlaceIcono: "fab fa-github",
         icono: "fas fa-mobile-screen-button"
       },
       {
@@ -1176,7 +1187,8 @@ const SITE_DATA = {
           "Direct in-person training for medical, nursing, and administrative personnel"
         ],
         enlace: "https://wa.me/525559694250?text=Hello%20Arturo,%20I'm%20interested%20in%20your%20clinical%20interoperability%20solutions",
-        enlaceTexto: "Inquire Solution",
+        enlaceTexto: "Inquire via WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-notes-medical"
       },
       {
@@ -1191,8 +1203,9 @@ const SITE_DATA = {
           "Auxiliary standalone sales applications for trade expos and commercial conventions",
           "Direct staff training and near-zero operational downtime"
         ],
-        enlace: "https://github.com/ArturoUrbinaVelasco",
-        enlaceTexto: "GitHub Profile",
+        enlace: "https://wa.me/525559694250?text=Hello%20Arturo,%20I'd%20like%20to%20learn%20more%20about%20your%20experience%20in%20custom%20ERP%20and%20banking%20POS",
+        enlaceTexto: "Inquire via WhatsApp",
+        enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-cash-register"
       },
       {
@@ -1209,6 +1222,7 @@ const SITE_DATA = {
         ],
         enlace: "https://www.facebook.com/AjuscoFix/",
         enlaceTexto: "AjuscoFix Facebook",
+        enlaceIcono: "fab fa-facebook",
         icono: "fab fa-facebook"
       }
     ],

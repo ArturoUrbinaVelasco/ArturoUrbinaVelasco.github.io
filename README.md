@@ -171,6 +171,7 @@ Todo colaborador o IA que trabaje en este proyecto debe respetar las siguientes 
 4. **Sin Cédula Profesional:** No incluir cédulas ni certificaciones sensibles en el portal público.
 5. **Cotización a Medida:** Salvo precios base de soporte de AjuscoFix, los desarrollos se etiquetan como *"Cotización a medida"*.
 6. **Prioridad en Cotizador:** El esquema de urgencia suma porcentajes (+0% Estándar, +25% Prioritaria, +50% Crítica).
+7. **Enlaces de Proyectos (Públicos vs. Privados):** Proyectos de código abierto (como *Android Mirror Hub*) enlazan a GitHub; *Banderazo* enlaza a su sitio web oficial dedicado; y los proyectos privados o corporativos (RAG Salud, HUB SSO, ERP) enlazan directamente a solicitud de información por WhatsApp para evitar enlaces rotos o inexistentes en perfiles públicos.
 
 ---
 
