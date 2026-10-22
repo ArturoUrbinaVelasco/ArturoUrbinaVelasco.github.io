@@ -62,6 +62,9 @@ const SITE_DATA = {
       terminalPrompt5: "dicom-pacs --mirth-connect",
       terminalTagOnline: "[EN LÍNEA]",
       terminalStatus5: "Interoperabilidad hospitalaria en centros médicos públicos y privados",
+      terminalPrompt6: "android-mirror-hub --wireless",
+      terminalTagReady: "[PROYECCIÓN]",
+      terminalStatus6: "ADB Wi-Fi 5555 + Scrcpy 4.1 · Suite Desktop Pro (CustomTkinter)",
 
       competenciasTag: "Dominio Tecnológico",
       competenciasTitle: "Competencias Técnicas & Stack de Ingeniería",
@@ -231,6 +234,7 @@ const SITE_DATA = {
         items: [
           "Kotlin (Android Nativo, Jetpack Compose)",
           "Clean Architecture & Room SQLite (100% Offline)",
+          "Control & Proyección Android Desktop (CustomTkinter, Scrcpy, ADB Wi-Fi)",
           "Criptografía Asimétrica ECDSA Offline",
           "DICOM / PACS & HL7 Mirth Connect",
           "Telemetría Puerto COM (Equipos Médicos, Lámparas)",
@@ -511,6 +515,23 @@ const SITE_DATA = {
         icono: "fas fa-taxi"
       },
       {
+        id: "android-mirror-hub",
+        titulo: "Android Mirror Hub · Suite Desktop Pro de Proyección & Control Android",
+        etiqueta: "App de Escritorio & Android Tools",
+        categoria: "Python 3.12 · CustomTkinter · Scrcpy 4.1 · ADB Wireless · Clean Architecture · Docker",
+        descripcion: "Suite de escritorio moderna e intuitiva para controlar y proyectar dispositivos Android por USB y Wi-Fi sin lidiar con comandos de consola. Construida con Clean Architecture y SOLID, integra switch inalámbrico en 1 clic (detección automática de IP y puerto 5555), asistente visual de vinculación (Android 11+ Pairing Code), soporte bilingüe en caliente, temas dinámicos Claro/Oscuro y contenedor Docker multi-stage.",
+        puntosClave: [
+          "One-Click Wireless Switch: autodetección de IP y cambio transparente de cable a Wi-Fi (adb tcpip)",
+          "Asistente visual de vinculación (Android 11+) con código de 6 dígitos y diagnóstico de errores en lenguaje humano",
+          "Control de proyección avanzado: apagado de pantalla del móvil, keep-awake, always on top y selector 1080p/720p a 60 FPS",
+          "Panel de telemetría en tiempo real: modelo del dispositivo, porcentaje de batería y tipo de conexión",
+          "Arquitectura limpia desacoplada (ADB/Scrcpy services), empaquetado Docker y suite de pruebas unitarias automatizadas"
+        ],
+        enlace: "https://github.com/ArturoUrbinaVelasco/android-mirror-hub",
+        enlaceTexto: "Repositorio Android Mirror Hub",
+        icono: "fas fa-mobile-screen-button"
+      },
+      {
         id: "interoperabilidad-clinica",
         titulo: "Interoperabilidad Clínica PACS / DICOM, HL7 & Telemetría COM",
         etiqueta: "Sector Salud & Dispositivos Médicos",
@@ -673,6 +694,9 @@ const SITE_DATA = {
       terminalPrompt5: "dicom-pacs --mirth-connect",
       terminalTagOnline: "[ONLINE]",
       terminalStatus5: "Clinical interoperability across public and private hospitals",
+      terminalPrompt6: "android-mirror-hub --wireless",
+      terminalTagReady: "[MIRRORING]",
+      terminalStatus6: "ADB Wi-Fi 5555 + Scrcpy 4.1 · Pro Desktop Suite (CustomTkinter)",
 
       competenciasTag: "Technical Mastery",
       competenciasTitle: "Engineering Stack & Technical Competencies",
@@ -842,6 +866,7 @@ const SITE_DATA = {
         items: [
           "Kotlin (Native Android, Jetpack Compose)",
           "Clean Architecture & Room SQLite (100% Offline)",
+          "Desktop Android Pro Mirroring (CustomTkinter, Scrcpy, Wi-Fi ADB)",
           "Asymmetric ECDSA Cryptography Offline",
           "DICOM / PACS & HL7 Mirth Connect",
           "COM Serial Port Telemetry (Medical Devices, Surgical Lights)",
@@ -1120,6 +1145,23 @@ const SITE_DATA = {
         enlace: "https://github.com/ArturoUrbinaVelasco/banderazo",
         enlaceTexto: "Banderazo Repository",
         icono: "fas fa-taxi"
+      },
+      {
+        id: "android-mirror-hub",
+        titulo: "Android Mirror Hub · Pro Desktop Android Mirroring & Control Suite",
+        etiqueta: "Desktop App & Android Tooling",
+        categoria: "Python 3.12 · CustomTkinter · Scrcpy 4.1 · ADB Wireless · Clean Architecture · Docker",
+        descripcion: "Modern, high-performance desktop suite designed for wireless and USB Android device mirroring, debugging, and management without console overhead. Engineered with Clean Architecture and SOLID principles, featuring one-click Wi-Fi transition, visual Android 11+ pairing wizard, dynamic Dark/Light themes, on-the-fly bilingual i18n, and multi-stage Docker orchestration.",
+        puntosClave: [
+          "One-Click Wireless Switch: automatic IP discovery and seamless cable-to-Wi-Fi transition (adb tcpip)",
+          "Visual pairing assistant for Android 11+ with 6-digit codes and humanized connection diagnostics",
+          "Advanced mirroring controls: device screen-off to save battery, keep-awake, always on top, and 1080p/720p 60 FPS",
+          "Real-time device telemetry: hardware model, live battery percentage, and connection link status",
+          "Clean Architecture with decoupled ADB/Scrcpy services, multi-stage Dockerfile, and automated unittest suites"
+        ],
+        enlace: "https://github.com/ArturoUrbinaVelasco/android-mirror-hub",
+        enlaceTexto: "Android Mirror Hub Repository",
+        icono: "fas fa-mobile-screen-button"
       },
       {
         id: "interoperabilidad-clinica",

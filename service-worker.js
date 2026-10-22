@@ -3,7 +3,7 @@
  * Portal Profesional Arturo Urbina Velasco & AjuscoFix
  */
 
-const CACHE_NAME = "arturourbina-v1.0.0";
+const CACHE_NAME = "arturourbina-v1.0.1";
 
 const CORE_ASSETS = [
   "./",

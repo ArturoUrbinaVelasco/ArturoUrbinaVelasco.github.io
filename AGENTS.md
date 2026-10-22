@@ -105,9 +105,9 @@ ArturoUrbinaVelasco.github.io/
 
 | Módulo / Característica | Estado | Archivos Involucrados | Notas de Implementación |
 | :--- | :---: | :--- | :--- |
-| **Hero & Terminal Interactiva** | ✅ Completado | `index.html`, `css/styles.css`, `data.js` | Terminal oscura fija con comandos simulados y enlaces directos |
-| **Dominio Tecnológico (Stack)** | ✅ Completado | `index.html`, `css/styles.css`, `data.js` | 6 tarjetas de especialidad (Web, On-Premise, Automatización, etc.) |
-| **Portafolio de Proyectos** | ✅ Completado | `js/app.js`, `js/data.js` | Filtros por categoría, etiquetas y botones a repositorios |
+| **Hero & Terminal Interactiva** | ✅ Completado | `index.html`, `css/styles.css`, `data.js` | Terminal oscura fija con telemetría en vivo simulada (RAG, Multiagente, MCP, Banderazo, DICOM, Android Mirror Hub) |
+| **Dominio Tecnológico (Stack)** | ✅ Completado | `index.html`, `css/styles.css`, `data.js` | 6 tarjetas de especialidad (Web, On-Premise, Automatización, Android, etc.) |
+| **Portafolio de Proyectos** | ✅ Completado | `js/app.js`, `js/data.js` | 7 proyectos destacados: RAG IA, HUB SSO, Banderazo, Android Mirror Hub, Interoperabilidad Clínica, ERP Retail y AjuscoFix |
 | **Trayectoria Profesional** | ✅ Completado | `js/app.js`, `js/data.js` | Cronograma confidencial sin nombres de empresas ni fechas de cursos |
 | **Catálogo de Servicios** | ✅ Completado | `js/app.js`, `js/data.js` | Filtros dinámicos y enlaces de consulta directa por WhatsApp |
 | **Cotizador Express** | ✅ Completado | `js/app.js`, `js/data.js` | Cálculo dinámico con porcentaje de prioridad y checkout a mensajería |

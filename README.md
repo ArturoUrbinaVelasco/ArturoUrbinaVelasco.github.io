@@ -39,7 +39,7 @@
    - Calculadora en 4 pasos con selección de tipo de proyecto, alcance y esquema de prioridad (+0% Estándar, +25% Prioritaria, +50% Urgente).
    - Genera una cotización estimada al instante y formatea un mensaje listo para enviar a WhatsApp o Telegram.
 5. **Portafolio y Trayectoria Confidencial:**
-   - Cronograma profesional detallando más de 13 años de experiencia en múltiples tecnologías sin exponer nombres comerciales de clientes ni fechas académicas sensibles.
+   - 7 proyectos de alta ingeniería en producción y código abierto: Infraestructura RAG Multiagente On-Premise, HUB Corporativo SSO, Banderazo (Taxímetro Android Nativo Kotlin), Android Mirror Hub (Suite Desktop de proyección Scrcpy y control Wi-Fi), Interoperabilidad PACS/DICOM y HL7, ERP Retail y soporte AjuscoFix. Cronograma confidencial sin exponer nombres comerciales de clientes ni fechas académicas sensibles.
 6. **Contador de Visitas Ultra-Discreto con Dashboard:**
    - Icono minimalista en el pie de página que se expande bajo demanda.
    - Al pulsar el número de visitas, abre en una nueva pestaña el panel en vivo de `hits.sh` con métricas por día, semana, mes y mapa de calor.
