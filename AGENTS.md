@@ -42,7 +42,7 @@ Al redactar o modificar textos en `js/data.js`, `index.html` o cualquier compone
 6. **Canales de Comunicación Paritarios:**  
    - Todo llamado a la acción debe ofrecer **WhatsApp (+52 55 5969 4250)** y **Telegram (@+525559694250)** con la misma visibilidad, complementado por **Messenger de AjuscoFix** y correo electrónico.
 7. **Política de Enlaces de Proyectos (Públicos vs. Privados):**  
-   - **Proyectos Públicos Open Source (ej. Android Mirror Hub):** Enlazan a su repositorio oficial en GitHub con icono de GitHub.
+   - **Proyectos Públicos Open Source (ej. MediaStream Downloader, Android Mirror Hub):** Enlazan a su repositorio oficial en GitHub con icono de GitHub y enlace directo a su demo en vivo (Vercel) si aplica.
    - **Banderazo (App Satelital):** Código de cliente cerrado/privado, pero con portal web dedicado oficial; enlaza a [https://arturourbinavelasco.github.io/banderazo/](https://arturourbinavelasco.github.io/banderazo/).
    - **Proyectos Privados / On-Premise / Confidenciales (RAG Documental Salud, HUB Corporativo SSO, ERP Retail, Interoperabilidad Clínica):** **NUNCA** enlazar a GitHub (evitar 404 o confusión con repositorios que no son públicos). Enlazar directamente a consulta vía WhatsApp (`https://wa.me/...`) con mensaje contextualizado prellenado.
 
@@ -109,9 +109,9 @@ ArturoUrbinaVelasco.github.io/
 
 | Módulo / Característica | Estado | Archivos Involucrados | Notas de Implementación |
 | :--- | :---: | :--- | :--- |
-| **Hero & Terminal Interactiva** | ✅ Completado | `index.html`, `css/styles.css`, `data.js` | Terminal oscura fija con telemetría en vivo simulada (RAG, Multiagente, MCP, Banderazo, DICOM, Android Mirror Hub) |
+| **Hero & Terminal Interactiva** | ✅ Completado | `index.html`, `css/styles.css`, `data.js` | Terminal oscura fija con telemetría en vivo simulada (RAG, Multiagente, MCP, Banderazo, DICOM, Android Mirror Hub, MediaStream) |
 | **Dominio Tecnológico (Stack)** | ✅ Completado | `index.html`, `css/styles.css`, `data.js` | 6 tarjetas de especialidad (Web, On-Premise, Automatización, Android, etc.) |
-| **Portafolio de Proyectos** | ✅ Completado | `js/app.js`, `js/data.js` | 7 proyectos destacados: RAG IA, HUB SSO, Banderazo, Android Mirror Hub, Interoperabilidad Clínica, ERP Retail y AjuscoFix |
+| **Portafolio de Proyectos** | ✅ Completado | `js/app.js`, `js/data.js` | 8 proyectos destacados: RAG IA, HUB SSO, MediaStream Downloader, Banderazo, Android Mirror Hub, Interoperabilidad Clínica, ERP Retail y AjuscoFix |
 | **Trayectoria Profesional** | ✅ Completado | `js/app.js`, `js/data.js` | Cronograma confidencial sin nombres de empresas ni fechas de cursos |
 | **Catálogo de Servicios** | ✅ Completado | `js/app.js`, `js/data.js` | Filtros dinámicos y enlaces de consulta directa por WhatsApp |
 | **Cotizador Express** | ✅ Completado | `js/app.js`, `js/data.js` | Cálculo dinámico con porcentaje de prioridad y checkout a mensajería |

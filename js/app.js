@@ -264,9 +264,16 @@ function renderProjects() {
 
       <div class="project-footer">
         <span style="font-size: 0.8rem; color: var(--text-muted); font-family: monospace;">${p.categoria}</span>
-        <a href="${p.enlace}" target="_blank" rel="noopener" class="btn ${p.enlace.includes('wa.me') ? 'btn-whatsapp' : 'btn-secondary'}" style="padding: 0.4rem 0.9rem; font-size: 0.825rem; white-space: nowrap;">
-          <i class="${p.enlaceIcono || (p.enlace.includes('wa.me') ? 'fab fa-whatsapp' : (p.enlace.includes('github.com') ? 'fab fa-github' : 'fas fa-external-link-alt'))}"></i> ${p.enlaceTexto}
-        </a>
+        <div class="project-actions">
+          ${p.enlaceDemo ? `
+            <a href="${p.enlaceDemo}" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.825rem; white-space: nowrap;">
+              <i class="${p.enlaceDemoIcono || 'fas fa-play'}"></i> ${p.enlaceDemoTexto || 'Demo en Vivo'}
+            </a>
+          ` : ''}
+          <a href="${p.enlace}" target="_blank" rel="noopener" class="btn ${p.enlace.includes('wa.me') ? 'btn-whatsapp' : 'btn-secondary'}" style="padding: 0.4rem 0.9rem; font-size: 0.825rem; white-space: nowrap;">
+            <i class="${p.enlaceIcono || (p.enlace.includes('wa.me') ? 'fab fa-whatsapp' : (p.enlace.includes('github.com') ? 'fab fa-github' : 'fas fa-external-link-alt'))}"></i> ${p.enlaceTexto}
+          </a>
+        </div>
       </div>
     </div>
   `).join("");

@@ -65,6 +65,9 @@ const SITE_DATA = {
       terminalPrompt6: "android-mirror-hub --wireless",
       terminalTagReady: "[PROYECCIÓN]",
       terminalStatus6: "ADB Wi-Fi 5555 + Scrcpy 4.1 · Suite Desktop Pro (CustomTkinter)",
+      terminalPrompt7: "mediastream --sse-telemetry",
+      terminalTagStreaming: "[EN VIVO]",
+      terminalStatus7: "React 19 + FastAPI + yt-dlp · Vercel Edge & Render (SSE 100% OK)",
 
       competenciasTag: "Dominio Tecnológico",
       competenciasTitle: "Competencias Técnicas & Stack de Ingeniería",
@@ -209,9 +212,9 @@ const SITE_DATA = {
           "Sitios Web en Base a tu Necesidad",
           "Landing Pages de Alta Conversión",
           "Catálogos en Línea & Portales Comerciales",
-          "React, Vite, Node.js (Express), FastAPI",
-          "Diseño Responsivo para Móviles & SEO",
-          "Integración con WhatsApp y Telegram",
+          "React 19, TypeScript, Vite, Tailwind CSS, FastAPI",
+          "Streaming en Tiempo Real con Server-Sent Events (SSE)",
+          "Diseño First-Mobile Responsivo & PWA",
           "HUB de Aplicaciones Corporativo (SSO con JWT)"
         ]
       },
@@ -233,6 +236,7 @@ const SITE_DATA = {
         icono: "fas fa-mobile-alt",
         items: [
           "Kotlin (Android Nativo, Jetpack Compose)",
+          "Capacitor (Android Cross-Platform & ADB Deploy)",
           "Clean Architecture & Room SQLite (100% Offline)",
           "Control & Proyección Android Desktop (CustomTkinter, Scrcpy, ADB Wi-Fi)",
           "Criptografía Asimétrica ECDSA Offline",
@@ -501,6 +505,27 @@ const SITE_DATA = {
         icono: "fas fa-cubes"
       },
       {
+        id: "mediastream-downloader",
+        titulo: "MediaStream Downloader · App Full-Stack First-Mobile & Cross-Platform",
+        etiqueta: "Full-Stack Web, Mobile & Cloud API",
+        categoria: "React 19 · TypeScript · FastAPI · yt-dlp · SSE · Capacitor · Docker · Vercel & Render",
+        descripcion: "Aplicación full-stack First-Mobile y multiplataforma (Web PWA, Android nativo vía Capacitor y Desktop) para extracción y descarga de video y audio en máxima fidelidad con un solo toque. Implementa Clean Architecture, telemetría reactiva en tiempo real vía Server-Sent Events (SSE), motor asíncrono con FastAPI y yt-dlp sobre Render, interfaz de alta conversión en React 19 sobre Vercel y arquitectura Zero-Data Retention con almacenamiento local privado.",
+        puntosClave: [
+          "Flujo de 1-toque: pegado inteligente de enlace, detección de plataforma y descarga en Video HD o Audio MP3 HQ (320kbps)",
+          "Telemetría en vivo vía SSE: barra de progreso reactiva con velocidad en MB/s y tiempo estimado (ETA) en tiempo real",
+          "Despliegue distribuido de alta disponibilidad: Frontend en Vercel Edge y Backend API contenerizado en Render",
+          "Arquitectura Cross-Platform: ejecutable en Web PWA, Android nativo (Capacitor + ADB) y entornos Docker Compose",
+          "Soporte bilingüe en caliente (ES / EN), temas Claro/Oscuro/Sistema y privacidad total con almacenamiento 100% en el dispositivo"
+        ],
+        enlace: "https://github.com/ArturoUrbinaVelasco/MediaStream-Downloader",
+        enlaceTexto: "Ver en GitHub",
+        enlaceIcono: "fab fa-github",
+        enlaceDemo: "https://media-stream-downloader-bice.vercel.app/",
+        enlaceDemoTexto: "Probar App Web",
+        enlaceDemoIcono: "fas fa-play",
+        icono: "fas fa-cloud-arrow-down"
+      },
+      {
         id: "banderazo-app",
         titulo: "Banderazo · Taxímetro Satelital Android Nativo Oficial CDMX",
         etiqueta: "App Móvil Android",
@@ -704,6 +729,9 @@ const SITE_DATA = {
       terminalPrompt6: "android-mirror-hub --wireless",
       terminalTagReady: "[MIRRORING]",
       terminalStatus6: "ADB Wi-Fi 5555 + Scrcpy 4.1 · Pro Desktop Suite (CustomTkinter)",
+      terminalPrompt7: "mediastream --sse-telemetry",
+      terminalTagStreaming: "[LIVE STREAM]",
+      terminalStatus7: "React 19 + FastAPI + yt-dlp · Vercel Edge & Render (SSE 100% OK)",
 
       competenciasTag: "Technical Mastery",
       competenciasTitle: "Engineering Stack & Technical Competencies",
@@ -848,9 +876,9 @@ const SITE_DATA = {
           "Websites Custom-Built to Your Exact Needs",
           "High-Converting Landing Pages",
           "Online Catalogs & Commercial Portals",
-          "React, Vite, Node.js (Express), FastAPI",
-          "Mobile-First Responsive Design & SEO",
-          "Direct WhatsApp & Telegram Integration",
+          "React 19, TypeScript, Vite, Tailwind CSS, FastAPI",
+          "Real-Time Telemetry with Server-Sent Events (SSE)",
+          "First-Mobile Responsive Design & PWA",
           "Corporate Application HUB (SSO with JWT)"
         ]
       },
@@ -872,6 +900,7 @@ const SITE_DATA = {
         icono: "fas fa-mobile-alt",
         items: [
           "Kotlin (Native Android, Jetpack Compose)",
+          "Capacitor (Android Cross-Platform & ADB Deploy)",
           "Clean Architecture & Room SQLite (100% Offline)",
           "Desktop Android Pro Mirroring (CustomTkinter, Scrcpy, Wi-Fi ADB)",
           "Asymmetric ECDSA Cryptography Offline",
@@ -1138,6 +1167,27 @@ const SITE_DATA = {
         enlaceTexto: "Inquire via WhatsApp",
         enlaceIcono: "fab fa-whatsapp",
         icono: "fas fa-cubes"
+      },
+      {
+        id: "mediastream-downloader",
+        titulo: "MediaStream Downloader · First-Mobile & Cross-Platform Full-Stack App",
+        etiqueta: "Full-Stack Web, Mobile & Cloud API",
+        categoria: "React 19 · TypeScript · FastAPI · yt-dlp · SSE · Capacitor · Docker · Vercel & Render",
+        descripcion: "First-Mobile, cross-platform full-stack application (Web PWA, native Android via Capacitor, and Desktop) engineered for single-touch video and high-fidelity audio extraction. Built with Clean Architecture, live streaming telemetry over Server-Sent Events (SSE), asynchronous FastAPI and yt-dlp backend deployed on Render, high-performance React 19 UI on Vercel Edge, and strict Zero-Data Retention with 100% client-side privacy.",
+        puntosClave: [
+          "Single-touch workflow: smart URL paste, platform metadata detection, and instant Video HD or 320kbps MP3 audio download",
+          "Live SSE streaming telemetry: reactive progress bar showing download speed in MB/s and real-time ETA calculation",
+          "Distributed cloud deployment: Next-gen React frontend on Vercel Edge and containerized FastAPI backend on Render",
+          "Cross-Platform architecture: runs on Web/PWA, native Android (Capacitor with ADB automation), and Docker environments",
+          "Hot-swap bilingual i18n (ES / EN), dynamic Light/Dark/System themes, and zero-retention private client storage"
+        ],
+        enlace: "https://github.com/ArturoUrbinaVelasco/MediaStream-Downloader",
+        enlaceTexto: "View on GitHub",
+        enlaceIcono: "fab fa-github",
+        enlaceDemo: "https://media-stream-downloader-bice.vercel.app/",
+        enlaceDemoTexto: "Launch Web App",
+        enlaceDemoIcono: "fas fa-play",
+        icono: "fas fa-cloud-arrow-down"
       },
       {
         id: "banderazo-app",
