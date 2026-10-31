@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copiloto Seguro • Grabadora de Cabina y Dashcam Profesional para Android</title>
+  <meta name="description" content="Grabadora de audio de cabina y Dashcam de video para choferes y taxistas. 100% offline, grabación en segundo plano con pantalla apagada, telemetría GPS forense y protección de impacto.">
+  <meta name="keywords" content="dashcam android, grabadora cabina taxi, camara seguridad taxi, dashcam segundo plano, dashcam offline, copiloto seguro">
+  <meta name="author" content="Arturo Urbina Velasco">
+  <meta name="theme-color" content="#060B12">
+
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Copiloto Seguro • Grabadora de Cabina y Dashcam Profesional">
+  <meta property="og:description" content="Seguridad profesional para conductores. Graba en segundo plano con pantalla apagada, cámara dual, telemetría forense SRT y cero consumo de datos.">
+  <meta property="og:image" content="img/01_cabina_principal_hud.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       HEADER & NAVBAR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#inicio" class="brand" aria-label="Copiloto Seguro Inicio">
+          <div class="brand-badge">🛡️</div>
+          <div class="brand-text">
+            <h1>Copiloto Seguro</h1>
+            <span data-i18n="brand_subtitle">Grabadora de Cabina & Dashcam</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#caracteristicas" data-i18n="nav_features">Características</a></li>
+          <li><a href="#pantallas" data-i18n="nav_screens">Pantallas</a></li>
+          <li><a href="#comparativa" data-i18n="nav_comparison">Comparativa</a></li>
+          <li><a href="#planes" data-i18n="nav_plans">Planes</a></li>
+          <li><a href="#descargas" data-i18n="nav_downloads">Descargas</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Preguntas</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="btn-icon" aria-label="Cambiar tema claro/oscuro" title="Tema">
+            <span class="theme-icon">☀️</span>
+          </button>
+          <button id="langToggle" class="btn-icon lang-btn" aria-label="Cambiar idioma" title="Language">
+            EN
+          </button>
+          <a href="https://wa.me/525559694250?text=Hola,%20quiero%20probar%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-cta-nav">
+            <span>🛡️</span>
+            <span data-i18n="nav_cta">Prueba 5 Días Gratis</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🛡️</span>
+            <span data-i18n="hero_badge">100% Offline • Seguridad para Choferes y Taxistas</span>
+          </div>
+          <h2 class="hero-title">
+            <span data-i18n="hero_title_1">Tu Testigo Silencioso</span><br>
+            <span class="gradient-text" data-i18n="hero_title_2">en Cada Viaje</span>
+          </h2>
+          <p class="hero-desc" data-i18n="hero_desc">
+            Grabadora de cabina y Dashcam profesional para Android. Graba discretamente en segundo plano con la pantalla apagada o encima de Waze/Maps. Telemetría GPS forense, sensor de impacto y cero consumo de datos.
+          </p>
+
+          <div class="chip-list">
+            <span class="chip">🔒 <span data-i18n="chip_offline">100% Offline (Sin internet)</span></span>
+            <span class="chip">🌙 <span data-i18n="chip_stealth">Pantalla apagada o modo OLED</span></span>
+            <span class="chip">📷 <span data-i18n="chip_dual">Cámara trasera, frontal o dual</span></span>
+            <span class="chip">🛰️ <span data-i18n="chip_telemetry">Telemetría OSD (.SRT)</span></span>
+            <span class="chip">⚡ <span data-i18n="chip_panic">Botón de pánico y sensor G</span></span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/525559694250?text=Hola,%20quiero%20probar%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <span>🚀</span>
+              <span data-i18n="hero_cta_primary">Solicitar Prueba Gratuita</span>
+            </a>
+            <a href="#descargas" class="btn-secondary">
+              <span>📥</span>
+              <span data-i18n="hero_cta_secondary">Descargar Manual PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-mockup-wrapper">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="img/01_cabina_principal_hud.png" alt="Copiloto Seguro Pantalla Principal">
+            </div>
+          </div>
+          <div class="phone-floating-badge">
+            <span class="dot"></span>
+            <span>GRABANDO EN SEGUNDO PLANO • 100% OFFLINE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CARACTERÍSTICAS
+       ======================================================================== -->
+  <section id="caracteristicas" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Diseñado para la Calle</span>
+        <h2 class="section-title">Protección Total sin Distracciones</h2>
+        <p class="section-desc">Desarrollado para choferes de taxi, apps de transporte y repartidores que requieren respaldo visual y sonoro ante cualquier percance.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎙️</div>
+          <h3>Grabación de Cabina Discreta</h3>
+          <p>Audio nítido en formato AAC optimizado (~25 MB por hora). Graba continuamente sin saturar la memoria ni calentar el teléfono.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📹</div>
+          <h3>Dashcam HD en Tramos Atómicos</h3>
+          <p>Grabación continua en tramos de 1, 3 o 5 minutos. Si se apaga el teléfono repentinamente, todos los tramos previos quedan a salvo.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Rotación FIFO Inteligente</h3>
+          <p>Tú decides el límite de memoria (2 GB, 5 GB, 10 GB). Los archivos más viejos se purgan automáticamente para que nunca te quedes sin espacio.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛰️</div>
+          <h3>Telemetría Forense OSD (.SRT)</h3>
+          <p>Cada video genera un archivo de subtítulos sincronizado segundo a segundo con tu velocidad en km/h, coordenadas GPS y fecha exacta con valor jurídico.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💥</div>
+          <h3>Detector de Choques & Pánico</h3>
+          <p>El acelerómetro detecta impactos bruscos y bloquea automáticamente el tramo actual. También puedes protegerlo con 3 toques de volumen sin ver la pantalla.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌙</div>
+          <h3>Modo Pantalla Negra OLED</h3>
+          <p>Apaga los píxeles de la pantalla para ahorrar batería y no revelar que estás grabando. Despierta en medio segundo con un doble toque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SHOWCASE INTERACTIVO DE PANTALLAS
+       ======================================================================== -->
+  <section id="pantallas" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="showcase_tag">Galería de la Aplicación</span>
+        <h2 class="section-title" data-i18n="showcase_title">Explora Copiloto Seguro en Acción</h2>
+        <p class="section-desc" data-i18n="showcase_desc">Toca cada pestaña para ver capturas reales tomadas directamente de un Samsung Galaxy S21 en funcionamiento.</p>
+      </div>
+
+      <div class="showcase-layout">
+        <div class="showcase-nav">
+          <div class="showcase-tab active" data-tab="1">
+            <span class="tab-number">01</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_1_title">Cabina Principal & Telemetría OSD</h4>
+              <p data-i18n="tab_1_desc">Control táctil gigante, indicador satelital GPS en vivo y accesos directos.</p>
+            </div>
+          </div>
+
+          <div class="showcase-tab" data-tab="2">
+            <span class="tab-number">02</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_2_title">Grabación en Segundo Plano (REC Activo)</h4>
+              <p data-i18n="tab_2_desc">Cronómetro en vivo, indicador parpadeante y buffer de almacenamiento.</p>
+            </div>
+          </div>
+
+          <div class="showcase-tab" data-tab="3">
+            <span class="tab-number">03</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_3_title">Modos de Captura Configurables</h4>
+              <p data-i18n="tab_3_desc">Solo Audio, Solo Video o Audio + Video según tu capacidad de almacenamiento.</p>
+            </div>
+          </div>
+
+          <div class="showcase-tab" data-tab="4">
+            <span class="tab-number">04</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_4_title">Soporte de Cámara Dual (Carretera + Pasaje)</h4>
+              <p data-i18n="tab_4_desc">Conmuta entre lente trasera, frontal o grabación simultánea dual.</p>
+            </div>
+          </div>
+
+          <div class="showcase-tab" data-tab="5">
+            <span class="tab-number">05</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_5_title">Historial de Evidencias y Telemetría .SRT</h4>
+              <p data-i18n="tab_5_desc">Lista de tramos grabados con subtítulos forenses y exportación masiva a USB.</p>
+            </div>
+          </div>
+
+          <div class="showcase-tab" data-tab="6">
+            <span class="tab-number">06</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_6_title">Protección Anti-Purga ante Impacto o Pánico</h4>
+              <p data-i18n="tab_6_desc">Los archivos con candado quedan protegidos permanentemente contra la rotación.</p>
+            </div>
+          </div>
+
+          <div class="showcase-tab" data-tab="7">
+            <span class="tab-number">07</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_7_title">Licencias Criptográficas Offline ECDSA P-256</h4>
+              <p data-i18n="tab_7_desc">Seguridad asimétrica de grado militar vinculada al hardware del teléfono.</p>
+            </div>
+          </div>
+
+          <div class="showcase-tab" data-tab="8">
+            <span class="tab-number">08</span>
+            <div class="tab-text">
+              <h4 data-i18n="tab_8_title">Coexistencia Perfecta con Banderazo</h4>
+              <p data-i18n="tab_8_desc">Opera al mismo tiempo que el taxímetro Banderazo sin interferencias.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase-display">
+          <div class="showcase-screen-frame">
+            <img id="showcaseMainImg" src="img/01_cabina_principal_hud.png" alt="Captura de Pantalla Copiloto Seguro">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       COMPARATIVA
+       ======================================================================== -->
+  <section id="comparativa" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="comp_tag">Ventajas Competitivas</span>
+        <h2 class="section-title" data-i18n="comp_title">¿Por qué Elegir Copiloto Seguro?</h2>
+        <p class="section-desc" data-i18n="comp_desc">Una solución completa de ingeniería pensada para el trabajo real.</p>
+      </div>
+
+      <div class="comparison-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th data-i18n="th_feature">Característica</th>
+              <th class="col-highlight" data-i18n="th_copiloto">Copiloto Seguro</th>
+              <th data-i18n="th_dashcam">Dashcam Física Tradicional</th>
+              <th data-i18n="th_others">Apps Genéricas de Video</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="row_1_name">Costo de inversión</td>
+              <td class="col-highlight" data-i18n="row_1_copiloto">Cero equipo extra. Usa tu mismo celular.</td>
+              <td data-i18n="row_1_dashcam">$1,500 - $3,500 MXN + instalación</td>
+              <td data-i18n="row_1_others">Gratis pero saturadas de anuncios</td>
+            </tr>
+            <tr>
+              <td data-i18n="row_2_name">Conexión a internet / Privacidad</td>
+              <td class="col-highlight" data-i18n="row_2_copiloto">100% Offline. Tus videos son solo tuyos.</td>
+              <td data-i18n="row_2_dashcam">Offline (tarjeta SD frágil)</td>
+              <td data-i18n="row_2_others">Exige datos y sube telemetría</td>
+            </tr>
+            <tr>
+              <td data-i18n="row_3_name">Operación en segundo plano</td>
+              <td class="col-highlight" data-i18n="row_3_copiloto">Graba con pantalla apagada o Waze al frente.</td>
+              <td data-i18n="row_3_dashcam">Fija al parabrisas, visible al pasaje</td>
+              <td data-i18n="row_3_others">Se congela al minimizar o apagar pantalla</td>
+            </tr>
+            <tr>
+              <td data-i18n="row_4_name">Telemetría forense jurídica</td>
+              <td class="col-highlight" data-i18n="row_4_copiloto">Subtítulos .SRT sincronizados (km/h y GPS)</td>
+              <td data-i18n="row_4_dashcam">Texto quemado en video de baja nitidez</td>
+              <td data-i18n="row_4_others">No disponible o imprecisa</td>
+            </tr>
+            <tr>
+              <td data-i18n="row_5_name">Protección ante asalto o choque</td>
+              <td class="col-highlight" data-i18n="row_5_copiloto">Acelerómetro G + Botones de volumen</td>
+              <td data-i18n="row_5_dashcam">Se la pueden arrancar y robar</td>
+              <td data-i18n="row_5_others">No detecta impacto ni pánico</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PLANES Y LICENCIAS
+       ======================================================================== -->
+  <section id="planes" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Precios Accesibles</span>
+        <h2 class="section-title">Planes Transparentes sin Suscripciones Forzosas</h2>
+        <p class="section-desc">Pagas una sola vez por el periodo que necesitas. Sin cargos automáticos a tarjeta.</p>
+      </div>
+
+      <div class="plans-grid">
+        <div class="plan-card">
+          <h3 class="plan-title">Prueba de Cortesía</h3>
+          <div class="plan-price">$0 <span>/ 5+1 días</span></div>
+          <p class="plan-desc">Pruébala en tu turno de trabajo con todas las funciones desbloqueadas.</p>
+          <ul class="plan-features">
+            <li class="check">Grabación de cabina completa</li>
+            <li class="check">Dashcam en segundo plano</li>
+            <li class="check">Telemetría GPS en vivo</li>
+            <li class="check">100% libre de anuncios</li>
+          </ul>
+          <a href="https://wa.me/525559694250?text=Hola,%20solicito%20mi%20clave%20de%20prueba%20para%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="width: 100%; justify-content: center;">Solicitar Prueba</a>
+        </div>
+
+        <div class="plan-card">
+          <h3 class="plan-title">1 Mes</h3>
+          <div class="plan-price">$40 <span>MXN</span></div>
+          <p class="plan-desc">Ideal para probar la aplicación durante un mes completo de servicio.</p>
+          <ul class="plan-features">
+            <li class="check">30 días de vigencia continua</li>
+            <li class="check">Rotación y almacenamiento ilimitado</li>
+            <li class="check">Soporte directo por WhatsApp</li>
+            <li class="check">Reemisión gratis por cambio de equipo</li>
+          </ul>
+          <a href="https://wa.me/525559694250?text=Hola,%20me%20interesa%20la%20licencia%20de%201%20Mes%20de%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="width: 100%; justify-content: center;">Adquirir 1 Mes</a>
+        </div>
+
+        <div class="plan-card">
+          <h3 class="plan-title">3 Meses</h3>
+          <div class="plan-price">$100 <span>MXN</span></div>
+          <p class="plan-desc">Ahorro para conductores constantes y choferes de tiempo completo.</p>
+          <ul class="plan-features">
+            <li class="check">90 días de vigencia continua</li>
+            <li class="check">Equivalente a solo $33 al mes</li>
+            <li class="check">Todas las funciones activadas</li>
+            <li class="check">Soporte prioritario</li>
+          </ul>
+          <a href="https://wa.me/525559694250?text=Hola,%20me%20interesa%20la%20licencia%20de%203%20Meses%20de%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="width: 100%; justify-content: center;">Adquirir 3 Meses</a>
+        </div>
+
+        <div class="plan-card featured">
+          <div class="plan-badge">MÁS POPULAR</div>
+          <h3 class="plan-title">1 Año</h3>
+          <div class="plan-price">$350 <span>MXN</span></div>
+          <p class="plan-desc">Protección garantizada todo el año por menos de $1 peso al día.</p>
+          <ul class="plan-features">
+            <li class="check">365 días de cobertura ininterrumpida</li>
+            <li class="check">Ahorro máximo garantizado</li>
+            <li class="check">Actualizaciones incluidas</li>
+            <li class="check">Soporte VIP telefónico/WhatsApp</li>
+          </ul>
+          <a href="https://wa.me/525559694250?text=Hola,%20me%20interesa%20la%20licencia%20Anual%20de%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width: 100%; justify-content: center;">Adquirir 1 Año</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DESCARGAS OFICIALES
+       ======================================================================== -->
+  <section id="descargas" class="section section-alt">
+    <div class="container">
+      <div class="download-box">
+        <h3 data-i18n="download_title">Archivos Oficiales de Distribución</h3>
+        <p data-i18n="download_desc">Descarga directa del instalador APK para Android y el manual del conductor completo en formato PDF listo para consulta.</p>
+
+        <div class="download-links">
+          <a href="https://wa.me/525559694250?text=Hola,%20quiero%20descargar%20el%20APK%20de%20Copiloto%20Seguro%20para%20probarlo" target="_blank" rel="noopener noreferrer" class="download-card">
+            <div class="download-icon">🤖</div>
+            <div>
+              <h4 data-i18n="download_apk_title">Copiloto Seguro APK (Release)</h4>
+              <span data-i18n="download_apk_sub">Solicitar por WhatsApp (12.5 MB)</span>
+            </div>
+          </a>
+
+          <a href="CopilotoSeguro-manual-del-conductor.pdf" target="_blank" class="download-card">
+            <div class="download-icon">📄</div>
+            <div>
+              <h4 data-i18n="download_pdf_title">Manual del Conductor (PDF)</h4>
+              <span data-i18n="download_pdf_sub">Descargar Guía Completa (18 Pág.)</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ (PREGUNTAS FRECUENTES)
+       ======================================================================== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dudas Comunes</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-desc">Todo lo que necesitas saber antes de instalar Copiloto Seguro en tu dispositivo.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>¿La app sigue grabando si apago la pantalla o uso Waze / Google Maps?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, absolutamente. Copiloto Seguro utiliza un servicio en primer plano protegido por Android 14+ que continúa capturando audio y video aunque minimices la aplicación, bloquees el teléfono con el botón de encendido o tengas Waze, Google Maps o el taxímetro Banderazo abiertos al frente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué pasa si se llena la memoria del teléfono?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>La aplicación cuenta con rotación circular FIFO inteligente. Tú defines un tope de almacenamiento en los Ajustes (por ejemplo, 5 GB). Cuando la memoria asignada se llena, la app elimina automáticamente los tramos más viejos para dejar espacio a los nuevos. Los archivos que hayas protegido ante un choque o con el botón de pánico jamás se borran.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo funciona el botón de pánico si no puedo ver la pantalla?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Si sientes que una situación de riesgo está ocurriendo en tu unidad, presiona rápidamente 3 veces seguidas cualquier botón de volumen de tu teléfono. El sistema emitirá una vibración silenciosa de confirmación y marcará el tramo en curso con candado de protección permanente (.locked) sin que el pasajero sospeche nada.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Se requiere conexión a internet o datos móviles?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. Copiloto Seguro es 100% offline. No consume ni un solo megabyte de tu paquete de datos ni sube tus grabaciones a ningún servidor en la nube. Todas tus evidencias y archivos de telemetría quedan resguardados exclusivamente dentro del almacenamiento interno de tu teléfono.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo exporto los videos para mostrarlos a la policía, seguro o ministerio público?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>En la pestaña "Evidencias", presiona el botón "Exportar a USB / Carpeta Pública". La aplicación copiará instantáneamente todos los videos y subtítulos .SRT a la carpeta estándar <code>Descargas/CopilotoSeguro/</code> de tu teléfono, de donde podrás conectarlo a cualquier computadora con cable USB o pasar los archivos por WhatsApp o memoria externa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-badge">🛡️</div>
+            <div class="brand-text">
+              <h2>Copiloto Seguro</h2>
+              <span>Grabadora de Cabina & Dashcam</span>
+            </div>
+          </div>
+          <p>Herramienta nativa de seguridad para operadores profesionales de transporte y taxistas. Diseñado con altos estándares de privacidad y cero consumo de datos.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#pantallas">Pantallas de la App</a></li>
+            <li><a href="#comparativa">Comparativa Técnica</a></li>
+            <li><a href="#planes">Planes y Precios</a></li>
+            <li><a href="#descargas">Archivos de Distribución</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto y Soporte</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/525559694250" target="_blank" rel="noopener noreferrer">WhatsApp: +52 55 5969 4250</a></li>
+            <li><a href="mailto:arturo.urbina.velasco@gmail.com">arturo.urbina.velasco@gmail.com</a></li>
+            <li>Ciudad de México, México</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Copiloto Seguro • Desarrollado por Arturo Urbina Velasco • Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

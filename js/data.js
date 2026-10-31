@@ -59,6 +59,9 @@ const SITE_DATA = {
       terminalStatus3: "Model Context Protocol a PostgreSQL en solo lectura",
       terminalPrompt4: "banderazo-android --version",
       terminalStatus4: "Banderazo v0.3.0 Release · Kotlin Satelital Puro (690+ tests OK)",
+      terminalPromptCopiloto: "copiloto-seguro --dashcam-status",
+      terminalTagCopiloto: "[GRABANDO]",
+      terminalStatusCopiloto: "Copiloto Seguro v0.1.0 · Dashcam Dual + Telemetría OSD (.SRT) 100% Offline",
       terminalPrompt5: "dicom-pacs --mirth-connect",
       terminalTagOnline: "[EN LÍNEA]",
       terminalStatus5: "Interoperabilidad hospitalaria en centros médicos públicos y privados",
@@ -543,6 +546,25 @@ const SITE_DATA = {
         icono: "fas fa-taxi"
       },
       {
+        id: "copiloto-seguro-app",
+        titulo: "Copiloto Seguro · Grabadora de Cabina & Dashcam Profesional para Android",
+        etiqueta: "App Móvil Android",
+        categoria: "Kotlin · Jetpack Compose · Camera2 API · Criptografía ECDSA · Forense OSD",
+        descripcion: "Aplicación móvil nativa complementaria para choferes de taxi y transporte privado desarrollada bajo Clean Architecture. Graba audio de cabina y video dashcam de forma discreta y robusta en segundo plano (pantalla apagada o con Waze/Maps al frente), con soporte de lente dual (carretera + pasaje), telemetría forense OSD sincronizada en subtítulos .SRT (km/h y GPS), rotación FIFO inteligente y sensor de colisión.",
+        puntosClave: [
+          "Grabación en segundo plano continua mediante Foreground Service de alta prioridad",
+          "Soporte de cámara dual simultánea (carretera y cabina) con Camera2 API",
+          "Telemetría forense OSD con subtítulos .SRT sincronizados segundo a segundo (velocidad km/h y coordenadas GPS)",
+          "Protección anti-purga automática ante impacto (acelerómetro G) y atajo de pánico por volumen",
+          "Modo pantalla negra OLED para discreción absoluta y máximo ahorro de batería",
+          "Sistema de licencias criptográficas asimétricas offline con ECDSA P-256 en Base32 Crockford"
+        ],
+        enlace: "https://arturourbinavelasco.github.io/copiloto-seguro/",
+        enlaceTexto: "Ver Sitio de Copiloto Seguro",
+        enlaceIcono: "fas fa-external-link-alt",
+        icono: "fas fa-shield-halved"
+      },
+      {
         id: "android-mirror-hub",
         titulo: "Android Mirror Hub · Suite Desktop Pro de Proyección & Control Android",
         etiqueta: "App de Escritorio & Android Tools",
@@ -723,6 +745,9 @@ const SITE_DATA = {
       terminalStatus3: "Model Context Protocol to PostgreSQL in read-only mode",
       terminalPrompt4: "banderazo-android --version",
       terminalStatus4: "Banderazo v0.3.0 Release · Pure Satellite Kotlin (690+ tests OK)",
+      terminalPromptCopiloto: "copiloto-seguro --dashcam-status",
+      terminalTagCopiloto: "[RECORDING]",
+      terminalStatusCopiloto: "Copiloto Seguro v0.1.0 · Dual Dashcam + OSD (.SRT) Telemetry 100% Offline",
       terminalPrompt5: "dicom-pacs --mirth-connect",
       terminalTagOnline: "[ONLINE]",
       terminalStatus5: "Clinical interoperability across public and private hospitals",
@@ -1205,6 +1230,25 @@ const SITE_DATA = {
         enlaceTexto: "Visit Banderazo Site",
         enlaceIcono: "fas fa-external-link-alt",
         icono: "fas fa-taxi"
+      },
+      {
+        id: "copiloto-seguro-app",
+        titulo: "Copiloto Seguro · Cabin Voice Recorder & Professional Dashcam for Android",
+        etiqueta: "Android Native Mobile App",
+        categoria: "Kotlin · Jetpack Compose · Camera2 API · ECDSA Crypto · OSD Telemetry",
+        descripcion: "Native Android application engineered for taxi and rideshare drivers built under Clean Architecture. Records cabin voice audio and road video dashcam discreetly in the background (with screen locked or while navigating with Google Maps/Waze), supporting dual concurrent lens recording, synchronized forensic OSD telemetry in .SRT sidecars (speed in km/h and GPS coordinates), intelligent FIFO rotation, and G-force collision detection.",
+        puntosClave: [
+          "Seamless background recording via Android 14+ high-priority Foreground Service",
+          "Concurrent dual camera support (front cabin + rear road) utilizing native Camera2 API",
+          "Forensic OSD telemetry generating synchronized .SRT subtitle sidecars (live km/h and GPS coordinates)",
+          "Anti-purge protection triggered by hardware accelerometer G-sensor impact or silent volume panic key",
+          "Pure OLED black screen mode for absolute discretion and optimal battery preservation",
+          "100% offline asymmetric cryptographic licensing verified by ECDSA P-256 in Crockford Base32"
+        ],
+        enlace: "https://arturourbinavelasco.github.io/copiloto-seguro/",
+        enlaceTexto: "Visit Copiloto Seguro Site",
+        enlaceIcono: "fas fa-external-link-alt",
+        icono: "fas fa-shield-halved"
       },
       {
         id: "android-mirror-hub",
