@@ -38,7 +38,7 @@
           <li><a href="#caracteristicas" data-i18n="nav_features">Características</a></li>
           <li><a href="#pantallas" data-i18n="nav_screens">Pantallas</a></li>
           <li><a href="#comparativa" data-i18n="nav_comparison">Comparativa</a></li>
-          <li><a href="#planes" data-i18n="nav_plans">Planes</a></li>
+          <li><a href="#prueba" data-i18n="nav_trial">Prueba Gratis</a></li>
           <li><a href="#descargas" data-i18n="nav_downloads">Descargas</a></li>
           <li><a href="#faq" data-i18n="nav_faq">Preguntas</a></li>
         </ul>
@@ -176,76 +176,180 @@
         <p class="section-desc" data-i18n="showcase_desc">Toca cada pestaña para ver capturas reales tomadas directamente de un Samsung Galaxy S21 en funcionamiento.</p>
       </div>
 
-      <div class="showcase-layout">
-        <div class="showcase-nav">
-          <div class="showcase-tab active" data-tab="1">
-            <span class="tab-number">01</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_1_title">Cabina Principal & Telemetría OSD</h4>
-              <p data-i18n="tab_1_desc">Control táctil gigante, indicador satelital GPS en vivo y accesos directos.</p>
+      <div class="showcase-accordion">
+        <!-- Pantalla 01 -->
+        <div class="showcase-item active">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">01</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_1_title">Cabina Principal & Telemetría OSD</h4>
+                <p data-i18n="tab_1_desc">Control táctil gigante, indicador satelital GPS en vivo y accesos directos.</p>
+              </div>
             </div>
-          </div>
-
-          <div class="showcase-tab" data-tab="2">
-            <span class="tab-number">02</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_2_title">Grabación en Segundo Plano (REC Activo)</h4>
-              <p data-i18n="tab_2_desc">Cronómetro en vivo, indicador parpadeante y buffer de almacenamiento.</p>
-            </div>
-          </div>
-
-          <div class="showcase-tab" data-tab="3">
-            <span class="tab-number">03</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_3_title">Modos de Captura Configurables</h4>
-              <p data-i18n="tab_3_desc">Solo Audio, Solo Video o Audio + Video según tu capacidad de almacenamiento.</p>
-            </div>
-          </div>
-
-          <div class="showcase-tab" data-tab="4">
-            <span class="tab-number">04</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_4_title">Soporte de Cámara Dual (Carretera + Pasaje)</h4>
-              <p data-i18n="tab_4_desc">Conmuta entre lente trasera, frontal o grabación simultánea dual.</p>
-            </div>
-          </div>
-
-          <div class="showcase-tab" data-tab="5">
-            <span class="tab-number">05</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_5_title">Historial de Evidencias y Telemetría .SRT</h4>
-              <p data-i18n="tab_5_desc">Lista de tramos grabados con subtítulos forenses y exportación masiva a USB.</p>
-            </div>
-          </div>
-
-          <div class="showcase-tab" data-tab="6">
-            <span class="tab-number">06</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_6_title">Protección Anti-Purga ante Impacto o Pánico</h4>
-              <p data-i18n="tab_6_desc">Los archivos con candado quedan protegidos permanentemente contra la rotación.</p>
-            </div>
-          </div>
-
-          <div class="showcase-tab" data-tab="7">
-            <span class="tab-number">07</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_7_title">Licencias Criptográficas Offline ECDSA P-256</h4>
-              <p data-i18n="tab_7_desc">Seguridad asimétrica de grado militar vinculada al hardware del teléfono.</p>
-            </div>
-          </div>
-
-          <div class="showcase-tab" data-tab="8">
-            <span class="tab-number">08</span>
-            <div class="tab-text">
-              <h4 data-i18n="tab_8_title">Coexistencia Perfecta con Banderazo</h4>
-              <p data-i18n="tab_8_desc">Opera al mismo tiempo que el taxímetro Banderazo sin interferencias.</p>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/01_cabina_principal_hud.png" alt="Cabina Principal y Telemetría">
+              </div>
+              <p class="showcase-caption">Visualización limpia tipo HUD con botón táctil central de grabación, estado satelital GPS con coordenadas y accesos instantáneos de protección y modo OLED.</p>
             </div>
           </div>
         </div>
 
-        <div class="showcase-display">
-          <div class="showcase-screen-frame">
-            <img id="showcaseMainImg" src="img/01_cabina_principal_hud.png" alt="Captura de Pantalla Copiloto Seguro">
+        <!-- Pantalla 02 -->
+        <div class="showcase-item">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">02</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_2_title">Grabación en Segundo Plano (REC Activo)</h4>
+                <p data-i18n="tab_2_desc">Cronómetro en vivo, indicador parpadeante y buffer de almacenamiento.</p>
+              </div>
+            </div>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/02_grabacion_activa_telemetria.png" alt="Grabación Activa en Segundo Plano">
+              </div>
+              <p class="showcase-caption">El servicio protegido continúa grabando aunque bloquees la pantalla o abras el navegador Waze o Google Maps.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pantalla 03 -->
+        <div class="showcase-item">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">03</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_3_title">Modos de Captura Configurables</h4>
+                <p data-i18n="tab_3_desc">Solo Audio (~25 MB/h), Solo Video o Audio + Video Dashcam.</p>
+              </div>
+            </div>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/03_ajustes_modos_captura.png" alt="Modos de Captura Configurables">
+              </div>
+              <p class="showcase-caption">Personaliza la duración de tramos atómicos (1, 3 o 5 min) y el límite de memoria asignado para la rotación automática FIFO.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pantalla 04 -->
+        <div class="showcase-item">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">04</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_4_title">Soporte de Cámara Dual (Carretera + Pasaje)</h4>
+                <p data-i18n="tab_4_desc">Conmuta entre lente trasera, frontal o grabación simultánea dual.</p>
+              </div>
+            </div>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/04_modo_dual_camaras.png" alt="Cámara Dual Concurrente">
+              </div>
+              <p class="showcase-caption">En teléfonos con soporte multiprocesador de cámara, graba simultáneamente el camino hacia adelante y la cabina interior.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pantalla 05 -->
+        <div class="showcase-item">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">05</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_5_title">Historial de Evidencias y Telemetría .SRT</h4>
+                <p data-i18n="tab_5_desc">Lista de tramos grabados con subtítulos forenses y exportación masiva a USB.</p>
+              </div>
+            </div>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/05_historial_evidencias_srt.png" alt="Historial de Evidencias y Telemetría SRT">
+              </div>
+              <p class="showcase-caption">Explorador de tramos con tamaño, duración, archivos de subtítulos sincronizados .SRT con valor pericial y exportación rápida.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pantalla 06 -->
+        <div class="showcase-item">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">06</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_6_title">Protección Anti-Purga ante Impacto o Pánico</h4>
+                <p data-i18n="tab_6_desc">Los archivos con candado quedan protegidos permanentemente contra la rotación.</p>
+              </div>
+            </div>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/06_evidencias_protegidas_panico.png" alt="Evidencias Protegidas Anti-Purga">
+              </div>
+              <p class="showcase-caption">Al detectar un choque o al pulsar 3 veces cualquier botón de volumen, el tramo en curso se blinda (.locked) y jamás es borrado por la rotación.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pantalla 07 -->
+        <div class="showcase-item">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">07</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_7_title">Licencias Criptográficas Offline ECDSA P-256</h4>
+                <p data-i18n="tab_7_desc">Seguridad asimétrica de grado militar vinculada al hardware del teléfono.</p>
+              </div>
+            </div>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/07_licencia_activada_ecdsa.png" alt="Licencia Criptográfica Activada">
+              </div>
+              <p class="showcase-caption">Activación sin internet mediante ancla de 22 caracteres hexadecimales y firma criptográfica asimétrica.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pantalla 08 -->
+        <div class="showcase-item">
+          <button class="showcase-header">
+            <div class="showcase-header-left">
+              <span class="showcase-item-num">08</span>
+              <div class="showcase-item-text">
+                <h4 data-i18n="tab_8_title">Coexistencia Perfecta con Banderazo</h4>
+                <p data-i18n="tab_8_desc">Opera al mismo tiempo que el taxímetro Banderazo sin interferencias.</p>
+              </div>
+            </div>
+            <span class="showcase-arrow">▼</span>
+          </button>
+          <div class="showcase-body">
+            <div class="showcase-body-content">
+              <div class="showcase-frame">
+                <img src="img/08_coexistencia_banderazo.png" alt="Coexistencia con Banderazo">
+              </div>
+              <p class="showcase-caption">Ambas herramientas corren simultáneamente en segundo plano, permitiendo cobrar el viaje con Banderazo mientras Copiloto Seguro graba la cabina.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -311,68 +415,31 @@
   </section>
 
   <!-- ========================================================================
-       PLANES Y LICENCIAS
+       PRUEBA GRATUITA (GARANTÍA Y CONVERSIÓN WHATSAPP)
        ======================================================================== -->
-  <section id="planes" class="section">
+  <section id="prueba" class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Precios Accesibles</span>
-        <h2 class="section-title">Planes Transparentes sin Suscripciones Forzosas</h2>
-        <p class="section-desc">Pagas una sola vez por el periodo que necesitas. Sin cargos automáticos a tarjeta.</p>
-      </div>
+      <div class="trial-hero-card">
+        <div class="trial-badge">GARANTÍA DE PRUEBA COMPLETA</div>
+        <h2 class="section-title">Prueba de Cortesía • 5+1 Días Gratis</h2>
+        <p class="trial-desc">
+          Te regalamos 6 días naturales continuos con <strong>todas las funciones 100% desbloqueadas</strong> (Grabación de Cabina, Dashcam HD, Cámara Dual, Telemetría OSD y Botón de Pánico). Evalúala en tu unidad de trabajo real durante tu jornada.
+        </p>
 
-      <div class="plans-grid">
-        <div class="plan-card">
-          <h3 class="plan-title">Prueba de Cortesía</h3>
-          <div class="plan-price">$0 <span>/ 5+1 días</span></div>
-          <p class="plan-desc">Pruébala en tu turno de trabajo con todas las funciones desbloqueadas.</p>
-          <ul class="plan-features">
-            <li class="check">Grabación de cabina completa</li>
-            <li class="check">Dashcam en segundo plano</li>
-            <li class="check">Telemetría GPS en vivo</li>
-            <li class="check">100% libre de anuncios</li>
-          </ul>
-          <a href="https://wa.me/525559694250?text=Hola,%20solicito%20mi%20clave%20de%20prueba%20para%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="width: 100%; justify-content: center;">Solicitar Prueba</a>
+        <div class="trial-checklist">
+          <div class="trial-check-item"><span>✅</span> 100% Offline (Sin gastar tus datos móviles)</div>
+          <div class="trial-check-item"><span>✅</span> Cero anuncios ni publicidad invasiva</div>
+          <div class="trial-check-item"><span>✅</span> Grabación con pantalla apagada o encima de Waze/Maps</div>
+          <div class="trial-check-item"><span>✅</span> Telemetría jurídica con velocidad GPS y coordenadas</div>
+          <div class="trial-check-item"><span>✅</span> Soporte directo del ingeniero desarrollador</div>
+          <div class="trial-check-item"><span>✅</span> Sin contratos ni cargos forzosos a tarjeta</div>
         </div>
 
-        <div class="plan-card">
-          <h3 class="plan-title">1 Mes</h3>
-          <div class="plan-price">$40 <span>MXN</span></div>
-          <p class="plan-desc">Ideal para probar la aplicación durante un mes completo de servicio.</p>
-          <ul class="plan-features">
-            <li class="check">30 días de vigencia continua</li>
-            <li class="check">Rotación y almacenamiento ilimitado</li>
-            <li class="check">Soporte directo por WhatsApp</li>
-            <li class="check">Reemisión gratis por cambio de equipo</li>
-          </ul>
-          <a href="https://wa.me/525559694250?text=Hola,%20me%20interesa%20la%20licencia%20de%201%20Mes%20de%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="width: 100%; justify-content: center;">Adquirir 1 Mes</a>
-        </div>
-
-        <div class="plan-card">
-          <h3 class="plan-title">3 Meses</h3>
-          <div class="plan-price">$100 <span>MXN</span></div>
-          <p class="plan-desc">Ahorro para conductores constantes y choferes de tiempo completo.</p>
-          <ul class="plan-features">
-            <li class="check">90 días de vigencia continua</li>
-            <li class="check">Equivalente a solo $33 al mes</li>
-            <li class="check">Todas las funciones activadas</li>
-            <li class="check">Soporte prioritario</li>
-          </ul>
-          <a href="https://wa.me/525559694250?text=Hola,%20me%20interesa%20la%20licencia%20de%203%20Meses%20de%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="width: 100%; justify-content: center;">Adquirir 3 Meses</a>
-        </div>
-
-        <div class="plan-card featured">
-          <div class="plan-badge">MÁS POPULAR</div>
-          <h3 class="plan-title">1 Año</h3>
-          <div class="plan-price">$350 <span>MXN</span></div>
-          <p class="plan-desc">Protección garantizada todo el año por menos de $1 peso al día.</p>
-          <ul class="plan-features">
-            <li class="check">365 días de cobertura ininterrumpida</li>
-            <li class="check">Ahorro máximo garantizado</li>
-            <li class="check">Actualizaciones incluidas</li>
-            <li class="check">Soporte VIP telefónico/WhatsApp</li>
-          </ul>
-          <a href="https://wa.me/525559694250?text=Hola,%20me%20interesa%20la%20licencia%20Anual%20de%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width: 100%; justify-content: center;">Adquirir 1 Año</a>
+        <div class="trial-cta-wrap">
+          <a href="https://wa.me/525559694250?text=Hola,%20solicito%20mi%20clave%20de%20prueba%20gratuita%20para%20Copiloto%20Seguro" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 1.05rem; padding: 16px 36px;">
+            <span>💬</span>
+            <span>Solicitar Clave de Prueba por WhatsApp</span>
+          </a>
         </div>
       </div>
     </div>

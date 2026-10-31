@@ -225,36 +225,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // 4. SHOWCASE DE PANTALLAS INTERACTIVO
+  // 4. SHOWCASE DE PANTALLAS INTERACTIVO (ACORDEÓN INLINE)
   // ==========================================================================
-  const showcaseTabs = document.querySelectorAll('.showcase-tab');
-  const showcaseImg = document.getElementById('showcaseMainImg');
+  const showcaseItems = document.querySelectorAll('.showcase-item');
 
-  const imagenesShowcase = {
-    '1': 'img/01_cabina_principal_hud.png',
-    '2': 'img/02_grabacion_activa_telemetria.png',
-    '3': 'img/03_ajustes_modos_captura.png',
-    '4': 'img/04_modo_dual_camaras.png',
-    '5': 'img/05_historial_evidencias_srt.png',
-    '6': 'img/06_evidencias_protegidas_panico.png',
-    '7': 'img/07_licencia_activada_ecdsa.png',
-    '8': 'img/08_coexistencia_banderazo.png'
-  };
-
-  showcaseTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      showcaseTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      const targetId = tab.getAttribute('data-tab');
-      if (showcaseImg && imagenesShowcase[targetId]) {
-        showcaseImg.style.opacity = '0.3';
-        setTimeout(() => {
-          showcaseImg.src = imagenesShowcase[targetId];
-          showcaseImg.style.opacity = '1';
-        }, 120);
-      }
-    });
+  showcaseItems.forEach(item => {
+    const header = item.querySelector('.showcase-header');
+    if (header) {
+      header.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        showcaseItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    }
   });
 
   // ==========================================================================
